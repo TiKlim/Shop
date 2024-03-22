@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450" 
+        ExtendClientAreaToDecorationsHint="True"
+        x:Class="Shop.MainWindow"
+        Title="Shop"
+        MaxHeight="500"
+        MinHeight="500"
+        MaxWidth="1000"
+        MinWidth="1000"
+        WindowStartupLocation="CenterScreen">
+  <StackPanel Orientation="Horizontal">
+      <Image Source="C:\Users\prdb\RiderProjects\Shop\Image\general.png" Height="80" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="470,0,10,190"/>
+      <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-230,0,10,0" FontSize="40" FontStyle="Oblique">
+        Приветствуем Вас!
+      </TextBlock>
+      <Button Height="50" Width="150" Background="Green" Margin="-470,260,10,0" Name="B1">
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Azure" FontWeight="Bold">
+          Войти как гость
+        </TextBlock>
+      </Button>
+      <Button Height="50" Width="150" Background="Gold" Margin="-70,260,10,0">
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Cornsilk" FontWeight="Bold">
+          Войти как админ
+        </TextBlock>
+      </Button>
+    </StackPanel>
+</Window>

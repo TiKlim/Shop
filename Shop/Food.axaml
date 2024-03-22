@@ -1,0 +1,31 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Shop.Food"
+        Title="Food"
+        MaxHeight="800"
+        MinHeight="800"
+        MaxWidth="1280"
+        MinWidth="1280"
+        WindowStartupLocation="CenterScreen">
+<Window.Background>
+                <ImageBrush Source="C:\Users\prdb\RiderProjects\Shop\Image\view2.jpg"/>
+        </Window.Background>
+        <StackPanel>
+                <TextBlock Foreground="Ivory" FontWeight="Medium" Margin="30,20,0,0" FontSize="30">
+                        Продукты
+                </TextBlock>
+                <Button Height="40" Width="130" Background="White" Margin="1110,-40,0,0" Name="B5">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
+                                Назад
+                        </TextBlock>
+                </Button>
+                <Button Height="40" Width="230" Background="White" Margin="870,-40,0,0" Name="B4">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
+                                Корзина
+                        </TextBlock>
+                </Button>
+        </StackPanel>
+</Window>

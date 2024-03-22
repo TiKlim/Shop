@@ -1,0 +1,55 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Shop.User"
+        Title="Window1"
+        MaxHeight="800"
+        MinHeight="800"
+        MaxWidth="1280"
+        MinWidth="1280"
+        WindowStartupLocation="CenterScreen">
+        <Window.Background>
+                <ImageBrush Source="C:\Users\prdb\RiderProjects\Shop\Image\view2.jpg"/>
+        </Window.Background>
+        <StackPanel>
+                <TextBlock Foreground="Ivory" FontWeight="Medium" Margin="30,20,0,0" FontSize="30">
+                        Добро пожаловать!
+                </TextBlock>
+                <Button Height="40" Width="130" Background="White" Margin="1110,-40,0,0" Name="B3">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
+                                Главная
+                        </TextBlock>
+                </Button>
+                <Button Height="40" Width="230" Background="White" Margin="870,-40,0,0" Name="B4">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
+                                Корзина
+                        </TextBlock>
+                </Button>
+                <Button Height="290" Background="White" CornerRadius="12" Margin="130,100,0,0" Name="B6">
+                        <StackPanel>
+                                <Image Source="C:\Users\prdb\RiderProjects\Shop\Image\food.png" Height="190" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                                <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="MidnightBlue" FontSize="32" FontWeight="Bold" Margin="0,20,0,0">
+                                        Продукты
+                                </TextBlock>
+                        </StackPanel>
+                </Button>
+                <Button Height="290" Background="White" CornerRadius="12" Margin="530,-290,0,0" Name="B7">
+                        <StackPanel>
+                                <Image Source="C:\Users\prdb\RiderProjects\Shop\Image\tecnic.png" Height="190" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                                <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="DarkSlateGray" FontSize="32" FontWeight="Bold" Margin="0,20,0,0">
+                                        Техника
+                                </TextBlock>
+                        </StackPanel>
+                </Button>
+                <Button Height="290" Background="White" CornerRadius="12" Margin="930,-290,0,0" Name="B8">
+                        <StackPanel>
+                                <Image Source="C:\Users\prdb\RiderProjects\Shop\Image\cloth.png" Height="190" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                                <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="SteelBlue" FontSize="32" FontWeight="Bold" Margin="0,20,0,0">
+                                        Одежда
+                                </TextBlock>
+                        </StackPanel>
+                </Button>
+        </StackPanel>
+</Window>
