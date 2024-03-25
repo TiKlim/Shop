@@ -3,8 +3,10 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="Shop/App.axaml" value="Shop/Shop.csproj" />
         <entry key="Shop/Food.axaml" value="Shop/Shop.csproj" />
         <entry key="Shop/MainWindow.axaml" value="Shop/Shop.csproj" />
+        <entry key="Shop/User.axaml" value="Shop/Shop.csproj" />
         <entry key="Shop/Window1.axaml" value="Shop/Shop.csproj" />
       </map>
     </option>

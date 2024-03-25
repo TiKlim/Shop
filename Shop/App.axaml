@@ -5,6 +5,36 @@
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
     <Application.Styles>
-        <FluentTheme />
+      <Style Selector="Button.guest">
+        <Setter Property="Background" Value="Green"/>
+        <Style Selector="^:pointerover /template/ContentPresenter">
+          <Setter Property="Background" Value="DarkGreen"/>
+        </Style>
+      </Style>
+      <Style Selector="Button.admin">
+        <Setter Property="Background" Value="Gold"/>
+        <Style Selector="^:pointerover /template/ContentPresenter">
+          <Setter Property="Background" Value="DarkGoldenrod"/>
+        </Style>
+      </Style>
+      <Style Selector="Button.menu">
+        <Setter Property="Background" Value="White"/>
+        <Style Selector="^:pointerover /template/ContentPresenter">
+          <Setter Property="Background" Value="LightGray"/>
+        </Style>
+      </Style>
+      <Style Selector="Button.buy">
+        <Setter Property="Background" Value="White"/>
+        <Style Selector="^:pointerover /template/ContentPresenter">
+          <Setter Property="Background" Value="LightGray"/>
+        </Style>
+      </Style>
+      <Style Selector="TextBlock.food">
+        <Setter Property="Foreground" Value="MidnightBlue"/>
+        <Style Selector="^:pointerover /template/TextBlock">
+          <Setter Property="Foreground" Value="White"/>
+        </Style>
+      </Style>
+      <FluentTheme />
     </Application.Styles>
 </Application>

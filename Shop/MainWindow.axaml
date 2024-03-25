@@ -16,12 +16,12 @@
       <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-230,0,10,0" FontSize="40" FontStyle="Oblique">
         Приветствуем Вас!
       </TextBlock>
-      <Button Height="50" Width="150" Background="Green" Margin="-470,260,10,0" Name="B1">
+      <Button Height="50" Width="150" Classes="guest" Margin="-470,260,10,0" Name="B1">
         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Azure" FontWeight="Bold">
           Войти как гость
         </TextBlock>
       </Button>
-      <Button Height="50" Width="150" Background="Gold" Margin="-70,260,10,0">
+      <Button Height="50" Width="150" Classes="admin" Margin="-70,260,10,0">
         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Cornsilk" FontWeight="Bold">
           Войти как админ
         </TextBlock>

@@ -17,12 +17,12 @@
                 <TextBlock Foreground="Ivory" FontWeight="Medium" Margin="30,20,0,0" FontSize="30">
                         Добро пожаловать!
                 </TextBlock>
-                <Button Height="40" Width="130" Background="White" Margin="1110,-40,0,0" Name="B3">
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
+                <Button Height="40" Width="130" Classes="menu" Margin="1110,-40,0,0" Name="B3">
+                        <TextBlock Foreground="CornflowerBlue" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20">
                                 Главная
                         </TextBlock>
                 </Button>
-                <Button Height="40" Width="230" Background="White" Margin="870,-40,0,0" Name="B4">
+                <Button Height="40" Width="230" Classes="buy" Margin="870,-40,0,0" Name="B4">
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
                                 Корзина
                         </TextBlock>
@@ -30,7 +30,7 @@
                 <Button Height="290" Background="White" CornerRadius="12" Margin="130,100,0,0" Name="B6">
                         <StackPanel>
                                 <Image Source="C:\Users\prdb\RiderProjects\Shop\Image\food.png" Height="190" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-                                <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="MidnightBlue" FontSize="32" FontWeight="Bold" Margin="0,20,0,0">
+                                <TextBlock Classes="food" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="32" FontWeight="Bold" Margin="0,20,0,0">
                                         Продукты
                                 </TextBlock>
                         </StackPanel>
