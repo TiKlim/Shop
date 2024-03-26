@@ -15,6 +15,8 @@ public partial class User : Window
     InitializeComponent();
     B3.Click += OpenForm2;
     B6.Click += OpenForm3;
+    B7.Click += OpenForm6;
+    B8.Click += OpenForm7;
   }
   private void OpenForm2(object? sender, RoutedEventArgs e)
   {
@@ -26,6 +28,18 @@ public partial class User : Window
   {
     Food food = new Food();
     food.Show();
+    this.Close();
+  }
+  private void OpenForm6(object? sender, RoutedEventArgs e)
+  {
+    Tecnic tecnic = new Tecnic(firstName, lastName);
+    tecnic.Show();
+    this.Close();
+  }
+  private void OpenForm7(object? sender, RoutedEventArgs e)
+  {
+    Cloth cloth = new Cloth();
+    cloth.Show();
     this.Close();
   }
 }

@@ -20,10 +20,16 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 [C:/Users/prdb/RiderProjects/Shop/Shop/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/prdb/RiderProjects/Shop/Shop/Cloth.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/prdb/RiderProjects/Shop/Shop/Food.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/prdb/RiderProjects/Shop/Shop/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/prdb/RiderProjects/Shop/Shop/Tecnic.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/prdb/RiderProjects/Shop/Shop/User.axaml]
