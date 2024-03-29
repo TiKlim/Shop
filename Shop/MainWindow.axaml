@@ -21,7 +21,7 @@
           Войти как гость
         </TextBlock>
       </Button>
-      <Button Height="50" Width="150" Classes="admin" Margin="-70,260,10,0">
+      <Button Height="50" Width="150" Classes="admin" Margin="-70,260,10,0" Name="Admin">
         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Cornsilk" FontWeight="Bold">
           Войти как админ
         </TextBlock>

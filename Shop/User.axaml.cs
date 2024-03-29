@@ -32,7 +32,7 @@ public partial class User : Window
   }
   private void OpenForm6(object? sender, RoutedEventArgs e)
   {
-    Tecnic tecnic = new Tecnic(firstName, lastName);
+    Tecnic tecnic = new Tecnic();
     tecnic.Show();
     this.Close();
   }

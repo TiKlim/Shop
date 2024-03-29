@@ -35,6 +35,18 @@
           <Setter Property="Foreground" Value="White"/>
         </Style>
       </Style>
+      <Style Selector="Button.back">
+        <Setter Property="Background" Value="DarkGreen"/>
+        <Style Selector="^:pointerover /template/ContentPresenter">
+          <Setter Property="Background" Value="DarkSlateGray"/>
+        </Style>
+      </Style>
+      <Style Selector="Button.basket">
+        <Setter Property="Background" Value="DarkGreen"/>
+        <Style Selector="^:pointerover /template/ContentPresenter">
+          <Setter Property="Background" Value="DarkSlateGray"/>
+        </Style>
+      </Style>
       <FluentTheme />
       <StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml"/>
     </Application.Styles>

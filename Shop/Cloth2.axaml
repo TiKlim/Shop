@@ -2,20 +2,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450" x:CompileBindings="False"
-        x:Class="Shop.Tecnic"
-        Title="Tecnic"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Shop.Cloth2"
+        Title="Cloth2"
         MaxHeight="800"
         MinHeight="800"
         MaxWidth="1280"
         MinWidth="1280"
         WindowStartupLocation="CenterScreen">
         <Window.Background>
-                <ImageBrush Source="C:\Users\prdb\RiderProjects\Shop\Image\view2.jpg"/>
+                <ImageBrush Source="C:\Users\prdb\RiderProjects\Shop\Image\view6.jpg"/>
         </Window.Background>
         <StackPanel>
                 <TextBlock Foreground="Ivory" FontWeight="Medium" Margin="30,20,0,0" FontSize="30">
-                        Техника
+                        Одежда
                 </TextBlock>
                 <Button Height="40" Width="130" Background="White" Margin="1110,-40,0,0" Name="Back">
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
@@ -27,7 +27,5 @@
                                 Корзина
                         </TextBlock>
                 </Button>
-                <ListBox Margin="0,40,0,0" Background="AliceBlue" BorderBrush="Blue" CornerRadius="10" Width="1200" x:Name="Computer" SelectionMode="Multiple,Toggle"/>
-                <ListBox Margin="0,40,0,10" Background="Cornsilk" BorderBrush="Blue" CornerRadius="10" Width="1200" x:Name="Home" SelectionMode="Multiple,Toggle"/>
         </StackPanel>
 </Window>

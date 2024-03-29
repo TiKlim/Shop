@@ -3,21 +3,20 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Interactivity;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-
 
 namespace Shop;
 
 public partial class Tecnic : Window
 {
-  public string FirstName { get; set; }
-  public string LastName { get; set; }
-  public Tecnic(string firstName , string lastName)
+  private List<Tecnic> computer = new List<Tecnic>();
+  public Tecnic()
   {
-    FirstName = firstName;
-    LastName = lastName;
     InitializeComponent();
+    Computer.ItemsSource = new string[] {"Компьютерная мышь", "Клавиатура", "Дисплей", "Блок питания", "Материнская плата", "Наушники"}.OrderBy(x => x);
+    Home.ItemsSource = new string[] {"Стиральная машина", "Тостер", "Телевизор", "Холодильник", "Утюг", "Кофемашина"}.OrderBy(x => x);
     Back.Click += OpenForm5;
   }
   private void OpenForm5(object? sender, RoutedEventArgs e)
