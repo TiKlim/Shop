@@ -13,5 +13,12 @@ public partial class Tecnic2 : Window
     public Tecnic2()
     {
         InitializeComponent();
+        Obratno.Click += ObratnoForm;
+    }
+    private void ObratnoForm(object? sender, RoutedEventArgs e)
+    {
+        User2 user2 = new User2();
+        user2.Show();
+        this.Close();
     }
 }

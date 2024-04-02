@@ -11,19 +11,19 @@
         MinWidth="1280"
         WindowStartupLocation="CenterScreen">
         <Window.Background>
-                <ImageBrush Source="C:\Users\prdb\RiderProjects\Shop\Image\view6.jpg"/>
+                <ImageBrush Source="C:\Users\prdb\RiderProjects\Shop\Image\view10.jpg"/>
         </Window.Background>
         <StackPanel>
                 <TextBlock Foreground="Ivory" FontWeight="Medium" Margin="30,20,0,0" FontSize="30">
                         Продукты
                 </TextBlock>
-                <Button Height="40" Width="130" Background="White" Margin="1110,-40,0,0" Name="Backkk">
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
+                <Button Classes="back" Height="40" Width="130" Background="Green" Margin="1110,-40,0,0" Name="Backkk">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="20">
                                 Назад
                         </TextBlock>
                 </Button>
-                <Button Height="40" Width="230" Background="White" Margin="870,-40,0,0" Name="Baskett">
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
+                <Button Classes="basket" Height="40" Width="230" Background="Green" Margin="870,-40,0,0" Name="Baskett">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="20">
                                 Корзина
                         </TextBlock>
                 </Button>
