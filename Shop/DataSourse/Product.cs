@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-namespace Shop;
+﻿namespace Shop;
 
 public class Product
 {

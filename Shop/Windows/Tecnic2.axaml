@@ -16,7 +16,8 @@
         </Window.Background>
         <StackPanel>
                 <StackPanel
-                        Orientation="Horizontal">
+                        Orientation="Horizontal"
+                        Margin="10,10,20,40">
                         <TextBlock 
                                 Foreground="Ivory"
                                 FontWeight="Medium"
@@ -31,7 +32,7 @@
                                 <TextBlock 
                                         VerticalAlignment="Center" 
                                         HorizontalAlignment="Center"
-                                        Foreground="White" 
+                                        Foreground="White"
                                         FontSize="20"
                                         Text="Назад">
                                 </TextBlock>
@@ -65,7 +66,8 @@
                         </ListBox.ItemTemplate>
                 </ListBox>
                 <StackPanel
-                        Orientation="Horizontal">
+                        Orientation="Horizontal"
+                        Margin="10,280,20,40">
                         <Button 
                                 Classes="basket" 
                                 Background="Green"

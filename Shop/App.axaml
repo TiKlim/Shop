@@ -35,16 +35,11 @@
           <Setter Property="Foreground" Value="White"/>
         </Style>
       </Style>
-      <Style Selector="Button.back">
-        <Setter Property="Background" Value="DarkGreen"/>
-        <Style Selector="^:pointerover /template/ContentPresenter">
-          <Setter Property="Background" Value="DarkSlateGray"/>
-        </Style>
-      </Style>
       <Style Selector="Button.basket">
         <Setter Property="Background" Value="DarkGreen"/>
-        <Setter Property="Height" Value="40"/>
-        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Width" Value="200"/>
+        <Setter Property="Margin" Value="15,0,15,0"/>
         <Style Selector="^:pointerover /template/ContentPresenter">
           <Setter Property="Background" Value="DarkSlateGray"/>
         </Style>

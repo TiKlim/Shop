@@ -22,7 +22,7 @@
                         Добро пожаловать!
                 </TextBlock>
                 <!--</Border>-->
-                <Button Height="40" Width="130" Classes="back" Margin="1110,-40,0,0" Name="Backk">
+                <Button Height="40" Width="130" Classes="basket" Margin="1110,-40,0,0" Name="Backk">
                         <TextBlock Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20">
                                 Главная
                         </TextBlock>

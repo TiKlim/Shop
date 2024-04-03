@@ -1,11 +1,6 @@
-﻿using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
+﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 
 namespace Shop;
 

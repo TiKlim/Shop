@@ -17,14 +17,10 @@
         Приветствуем Вас!
       </TextBlock>
       <Button Height="50" Width="150" Classes="guest" Margin="-470,260,10,0" Name="B1">
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Azure" FontWeight="Bold">
-          Войти как гость
-        </TextBlock>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Azure" FontWeight="Bold" Text="Войти как гость"/>
       </Button>
       <Button Height="50" Width="150" Classes="admin" Margin="-70,260,10,0" Name="Admin">
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Cornsilk" FontWeight="Bold">
-          Войти как админ
-        </TextBlock>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Orange" FontWeight="Bold" Text="Войти как админ"/>
       </Button>
     </StackPanel>
 </Window>
