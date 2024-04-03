@@ -43,6 +43,8 @@
       </Style>
       <Style Selector="Button.basket">
         <Setter Property="Background" Value="DarkGreen"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Margin" Value="10"/>
         <Style Selector="^:pointerover /template/ContentPresenter">
           <Setter Property="Background" Value="DarkSlateGray"/>
         </Style>

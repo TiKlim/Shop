@@ -11,14 +11,22 @@ namespace Shop;
 
 public partial class Tecnic2 : Window
 {
-    //private List<Tecnic> computer = new List<Tecnic>();
     public Tecnic2()
     {
         InitializeComponent();
-        Computer.ItemsSource = new List<Window1>().OrderBy(x => x);
+        SetData();
         Obratno.Click += ObratnoForm;
         Add.Click += AddForm;
     }
+
+    private void SetData()
+    {
+        Computer.ItemsSource = Helper.DataObj.Products.Select(x => new
+        {
+            x.Name
+        });
+    }
+
     private void ObratnoForm(object? sender, RoutedEventArgs e)
     {
         User2 user2 = new User2();
@@ -29,5 +37,6 @@ public partial class Tecnic2 : Window
     {
         Window1 w1 = new Window1();
         w1.Show();
+        SetData();
     }
 }

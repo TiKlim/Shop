@@ -20,32 +20,32 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 [C:/Users/prdb/RiderProjects/Shop/Shop/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/prdb/RiderProjects/Shop/Shop/Cloth.axaml]
+[C:/Users/prdb/RiderProjects/Shop/Shop/Windows/Cloth.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/prdb/RiderProjects/Shop/Shop/Cloth2.axaml]
+[C:/Users/prdb/RiderProjects/Shop/Shop/Windows/Cloth2.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/prdb/RiderProjects/Shop/Shop/Food.axaml]
+[C:/Users/prdb/RiderProjects/Shop/Shop/Windows/Food.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/prdb/RiderProjects/Shop/Shop/Food2.axaml]
+[C:/Users/prdb/RiderProjects/Shop/Shop/Windows/Food2.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/prdb/RiderProjects/Shop/Shop/MainWindow.axaml]
+[C:/Users/prdb/RiderProjects/Shop/Shop/Windows/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/prdb/RiderProjects/Shop/Shop/Tecnic.axaml]
+[C:/Users/prdb/RiderProjects/Shop/Shop/Windows/Tecnic.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/prdb/RiderProjects/Shop/Shop/Tecnic2.axaml]
+[C:/Users/prdb/RiderProjects/Shop/Shop/Windows/Tecnic2.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/prdb/RiderProjects/Shop/Shop/User.axaml]
+[C:/Users/prdb/RiderProjects/Shop/Shop/Windows/User.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/prdb/RiderProjects/Shop/Shop/User2.axaml]
+[C:/Users/prdb/RiderProjects/Shop/Shop/Windows/User2.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/prdb/RiderProjects/Shop/Shop/Window1.axaml]
+[C:/Users/prdb/RiderProjects/Shop/Shop/Windows/Window1.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

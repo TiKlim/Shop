@@ -18,4 +18,47 @@
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.10"/>
         <PackageReference Include="MattEqualsCoder.AvaloniaControls" Version="0.9.9" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Windows\Cloth.axaml.cs">
+        <DependentUpon>Cloth.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Windows\Cloth2.axaml.cs">
+        <DependentUpon>Cloth2.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Windows\Food.axaml.cs">
+        <DependentUpon>Food.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Windows\Food2.axaml.cs">
+        <DependentUpon>Food2.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Windows\MainWindow.axaml.cs">
+        <DependentUpon>MainWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Windows\Tecnic.axaml.cs">
+        <DependentUpon>Tecnic.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Windows\Tecnic2.axaml.cs">
+        <DependentUpon>Tecnic2.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Windows\User.axaml.cs">
+        <DependentUpon>User.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Windows\User2.axaml.cs">
+        <DependentUpon>User2.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Windows\Window1.axaml.cs">
+        <DependentUpon>Window1.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
 </Project>

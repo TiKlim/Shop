@@ -11,25 +11,24 @@ namespace Shop;
 
 public partial class Window1 : Window
 {
-    private List<Window1> Computer;
-    protected string name;
-    protected double price;
+    private List<Product> goods;
+    //protected string name;
+    //protected double price;
 
     public Window1()
     {
         InitializeComponent();
         Dob.Click += DobForm;
-        Info(Computer);
     }
     private void DobForm(object? sender, RoutedEventArgs e)
     {
-        Computer.Add(new Window1());
-        this.Close();
+        Helper.DataObj.Products.Add(new Product(Name.Text!, Convert.ToDouble(Price.Text)));
+        Close();
     }
 
-    private void Info(List<Window1> Computer)
+    /*private void Info(List<Window1> Computer)
     {
         this.name = Name.Text;
         this.price = Convert.ToInt32(Price.Text);
-    }
+    }*/
 }
