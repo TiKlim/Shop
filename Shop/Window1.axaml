@@ -1,0 +1,23 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        ExtendClientAreaToDecorationsHint="True"
+        x:Class="Shop.Window1"
+        Title="Window1"
+        MaxHeight="400"
+        MinHeight="400"
+        MaxWidth="980"
+        MinWidth="980"
+        WindowStartupLocation="CenterScreen">
+        <StackPanel Orientation="Horizontal">
+                <Button Height="50" Width="450" Classes="basket" Margin="280,210,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Dob">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold">
+                                Добавить
+                        </TextBlock>
+                </Button>
+                <TextBox Name="Name" Height="20" Watermark="Название товара" Width="400" Margin="-450,0,0,300" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox Name="Price" Height="20" Watermark="Цена" Width="400" Margin="-450,0,0,200" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+</Window>

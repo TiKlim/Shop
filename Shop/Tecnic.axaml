@@ -28,6 +28,6 @@
                         </TextBlock>
                 </Button>
                 <ListBox Margin="0,40,0,0" Background="AliceBlue" BorderBrush="Blue" CornerRadius="10" Width="1200" x:Name="Computer" SelectionMode="Multiple,Toggle"/>
-                <ListBox Margin="0,40,0,10" Background="Cornsilk" BorderBrush="Blue" CornerRadius="10" Width="1200" x:Name="Home" SelectionMode="Multiple,Toggle"/>
+                <!--<ListBox Margin="0,40,0,10" Background="Cornsilk" BorderBrush="Blue" CornerRadius="10" Width="1200" x:Name="Home" SelectionMode="Multiple,Toggle"/>-->
         </StackPanel>
 </Window>
