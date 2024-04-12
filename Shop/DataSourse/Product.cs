@@ -4,10 +4,12 @@ public class Product
 {
     private string nameProduct;
     private double priceProduct;
-    public Product(string name, double price)
+    private string typeProduct;
+    public Product(string name, double price, string type)
     {
         nameProduct = name;
         priceProduct = price;
+        typeProduct = type;
     }
     public string Name
     {
@@ -18,5 +20,10 @@ public class Product
     {
         get { return priceProduct; }
         set { priceProduct = value; }
+    }
+    public string Type
+    {
+        get { return typeProduct; }
+        set { typeProduct = value; }
     }
 }

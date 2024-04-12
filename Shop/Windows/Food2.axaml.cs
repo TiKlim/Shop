@@ -1,6 +1,7 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
 using System.Linq;
+using System.Reflection;
 
 namespace Shop;
 
@@ -9,15 +10,15 @@ public partial class Food2 : Window
     public Food2()
     {
         InitializeComponent();
-        SetData();
+        SetData("foods");
         Backkk.Click += BacckOpen;
         Add.Click += AddForm;
     }
-    private void SetData()
+    private void SetData(string type)
     {
-        Computer.ItemsSource = Helper.DataObj.Products.Select(x => new
+        Foods.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).Select(x => new
         {
-            x.Name
+            x.Name, x.Price, x.Type
         });
     }
     private void BacckOpen(object? sender, RoutedEventArgs e)
@@ -30,6 +31,6 @@ public partial class Food2 : Window
     {
         Window1 w1 = new Window1();
         w1.Show();
-        SetData();
+        SetData("foods");
     }
 }

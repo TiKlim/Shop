@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\prdb\\RiderProjects\\Shop\\Shop\\Shop.csproj": {}
+    "C:\\Users\\prdb\\RiderProjects\\Shop2\\Shop\\Shop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\prdb\\RiderProjects\\Shop\\Shop\\Shop.csproj": {
+    "C:\\Users\\prdb\\RiderProjects\\Shop2\\Shop\\Shop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\prdb\\RiderProjects\\Shop\\Shop\\Shop.csproj",
+        "projectUniqueName": "C:\\Users\\prdb\\RiderProjects\\Shop2\\Shop\\Shop.csproj",
         "projectName": "Shop",
-        "projectPath": "C:\\Users\\prdb\\RiderProjects\\Shop\\Shop\\Shop.csproj",
+        "projectPath": "C:\\Users\\prdb\\RiderProjects\\Shop2\\Shop\\Shop.csproj",
         "packagesPath": "C:\\Users\\prdb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\prdb\\RiderProjects\\Shop\\Shop\\obj\\",
+        "outputPath": "C:\\Users\\prdb\\RiderProjects\\Shop2\\Shop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\prdb\\AppData\\Roaming\\NuGet\\NuGet.Config",
