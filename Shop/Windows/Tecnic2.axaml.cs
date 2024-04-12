@@ -16,9 +16,9 @@ public partial class Tecnic2 : Window
 
     private void SetData()
     {
-        Computer.ItemsSource = Helper.DataObj2.Tecnics.Select(x => new
+        Computer.ItemsSource = Helper.DataObj.Products.Select(x => new
         {
-            x.Name2
+            x.Name
         });
     }
 

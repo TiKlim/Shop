@@ -14,9 +14,5 @@ public class DataBase
         new Product("pivo5", 100,"clothes"),
         new Product("pivo6", 100,"foods")
     };
-    public List<Tecnici> Tecnics = new List<Tecnici>()
-    {
-        /**/
-    };
-    public List<Product> Cloths = new List<Product>() { };
+    //public List<Product> Cloths = new List<Product>() { };
 }
