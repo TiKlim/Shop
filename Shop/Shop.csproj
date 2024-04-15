@@ -61,4 +61,23 @@
         <SubType>Code</SubType>
       </Compile>
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Assets\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\cloth.png" />
+      <AvaloniaResource Include="Assets\cloth.png" />
+      <None Remove="Assets\food.png" />
+      <AvaloniaResource Include="Assets\food.png" />
+      <None Remove="Assets\general.png" />
+      <AvaloniaResource Include="Assets\general.png" />
+      <None Remove="Assets\view2.jpg" />
+      <AvaloniaResource Include="Assets\view2.jpg" />
+      <None Remove="Assets\view.jpg" />
+      <AvaloniaResource Include="Assets\view.jpg" />
+      <None Remove="Assets\tecnic.png" />
+      <AvaloniaResource Include="Assets\tecnic.png" />
+    </ItemGroup>
 </Project>

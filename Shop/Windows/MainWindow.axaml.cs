@@ -26,7 +26,5 @@ public partial class MainWindow : Window
     User2 user2 = new User2();
     user2.Show();
     this.Close();
-    //mainWindow.Close();
-    
   }
 }
