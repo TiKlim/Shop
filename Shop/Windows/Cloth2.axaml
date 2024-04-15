@@ -60,7 +60,7 @@
                         <ListBox.ItemTemplate>
                                 <DataTemplate>
                                         <TextBlock
-                                                Text="{Binding Name}">
+                                                Text="{Binding Name}"> <!--Path=Price-->
                                         </TextBlock>
                                 </DataTemplate>
                         </ListBox.ItemTemplate>
