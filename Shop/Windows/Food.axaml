@@ -12,7 +12,7 @@
         WindowStartupLocation="CenterScreen"
         x:CompileBindings="False">
 <Window.Background>
-                <ImageBrush Source="C:\Users\prdb\RiderProjects\Shop\Image\view2.jpg"/>
+                <ImageBrush Source="/Assets/view2.jpg"/>
         </Window.Background>
         <StackPanel>
                 <TextBlock Foreground="Ivory" FontWeight="Medium" Margin="30,20,0,0" FontSize="30">

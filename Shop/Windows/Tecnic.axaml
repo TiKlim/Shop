@@ -11,7 +11,7 @@
         MinWidth="1280"
         WindowStartupLocation="CenterScreen">
         <Window.Background>
-                <ImageBrush Source="C:\Users\prdb\RiderProjects\Shop\Image\view2.jpg"/>
+                <ImageBrush Source="/Assets/view2.jpg"/>
         </Window.Background>
         <StackPanel>
                 <TextBlock Foreground="Ivory" 

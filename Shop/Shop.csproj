@@ -63,10 +63,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Assets\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <None Remove="Assets\cloth.png" />
       <AvaloniaResource Include="Assets\cloth.png" />
       <None Remove="Assets\food.png" />
@@ -79,5 +75,7 @@
       <AvaloniaResource Include="Assets\view.jpg" />
       <None Remove="Assets\tecnic.png" />
       <AvaloniaResource Include="Assets\tecnic.png" />
+      <None Remove="Assets\view10.jpg" />
+      <AvaloniaResource Include="Assets\view10.jpg" />
     </ItemGroup>
 </Project>

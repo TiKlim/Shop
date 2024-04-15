@@ -11,7 +11,7 @@
         MinWidth="1280"
         WindowStartupLocation="CenterScreen">
         <Window.Background>
-                <ImageBrush Source="C:\Users\prdb\RiderProjects\Shop\Image\view2.jpg"/>
+                <ImageBrush Source="/Assets/view2.jpg"/>
         </Window.Background>
         <StackPanel>
                 <TextBlock Foreground="Ivory" FontWeight="Medium" Margin="30,20,0,0" FontSize="30">
@@ -29,7 +29,7 @@
                 </Button>
                 <Button Height="290" Background="White" CornerRadius="12" Margin="130,100,0,0" Name="B6">
                         <StackPanel>
-                                <Image Source="C:\Users\prdb\RiderProjects\Shop\Image\food.png" Height="190" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                                <Image Source="/Assets/food.png" Height="190" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
                                 <TextBlock Classes="food" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="32" FontWeight="Bold" Margin="0,20,0,0">
                                         Продукты
                                 </TextBlock>
@@ -37,7 +37,7 @@
                 </Button>
                 <Button Height="290" Background="White" CornerRadius="12" Margin="530,-290,0,0" Name="B7">
                         <StackPanel>
-                                <Image Source="C:\Users\prdb\RiderProjects\Shop\Image\tecnic.png" Height="190" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                                <Image Source="/Assets/tecnic.png" Height="190" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
                                 <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="DarkSlateGray" FontSize="32" FontWeight="Bold" Margin="0,20,0,0">
                                         Техника
                                 </TextBlock>
@@ -45,7 +45,7 @@
                 </Button>
                 <Button Height="290" Background="White" CornerRadius="12" Margin="930,-290,0,0" Name="B8">
                         <StackPanel>
-                                <Image Source="C:\Users\prdb\RiderProjects\Shop\Image\cloth.png" Height="190" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                                <Image Source="/Assets/cloth.png" Height="190" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
                                 <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="SteelBlue" FontSize="32" FontWeight="Bold" Margin="0,20,0,0">
                                         Одежда
                                 </TextBlock>

@@ -12,7 +12,10 @@
         MinWidth="1000"
         WindowStartupLocation="CenterScreen">
   <StackPanel Orientation="Horizontal">
-      <Image Source="C:\Users\prdb\RiderProjects\Shop\Image\general.png" Height="80" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="470,0,10,190"/>
+      <Image Source="/Assets/general.png" 
+             Height="80" 
+             Width="80"
+             VerticalAlignment="Center" HorizontalAlignment="Center" Margin="470,0,10,190" />
       <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-230,0,10,0" FontSize="40" FontStyle="Oblique">
         Приветствуем Вас!
       </TextBlock>
