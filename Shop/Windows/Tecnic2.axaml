@@ -55,7 +55,7 @@
                         Background="AliceBlue"
                         BorderBrush="Blue" 
                         CornerRadius="10"
-                        x:Name="Computer" 
+                        x:Name="Technic" 
                         SelectionMode="Multiple,Toggle">
                         <ListBox.ItemTemplate>
                                 <DataTemplate>

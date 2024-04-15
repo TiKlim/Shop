@@ -9,16 +9,16 @@ public partial class Tecnic2 : Window
     public Tecnic2()
     {
         InitializeComponent();
-        SetData();
+        SetData("technic");
         Obratno.Click += ObratnoForm;
         Add.Click += AddForm;
     }
 
-    private void SetData()
+    private void SetData(string type)
     {
-        Computer.ItemsSource = Helper.DataObj.Products.Select(x => new
+        Technic.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).Select(x => new
         {
-            x.Name
+            x.Name, x.Price, x.Type
         });
     }
 
@@ -32,6 +32,6 @@ public partial class Tecnic2 : Window
     {
         Window1 w1 = new Window1();
         w1.Show();
-        SetData();
+        SetData("technic");
     }
 }

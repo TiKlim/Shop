@@ -9,15 +9,15 @@ public partial class Cloth2 : Window
     public Cloth2()
     {
         InitializeComponent();
-        SetData();
+        SetData("clothes");
         Back.Click += BackkOpen;
         Add.Click += AddForm;
     }
-    private void SetData()
+    private void SetData(string type)
     {
-        Computer.ItemsSource = Helper.DataObj.Products.Select(x => new
+        Clothes.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).Select(x => new
         {
-            x.Name
+            x.Name, x.Price, x.Type
         });
     }
     private void BackkOpen(object? sender, RoutedEventArgs e)
@@ -30,6 +30,6 @@ public partial class Cloth2 : Window
     {
         Window1 w1 = new Window1();
         w1.Show();
-        SetData();
+        SetData("clothes");
     }
 }

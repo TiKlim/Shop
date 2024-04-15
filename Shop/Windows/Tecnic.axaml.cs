@@ -1,25 +1,23 @@
-﻿using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
+﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 
 namespace Shop;
 
 public partial class Tecnic : Window
 {
-  //private List<Tecnic> Computer = new List<Tecnic>();
   public Tecnic()
   {
     InitializeComponent();
-    Computer.ItemsSource = new List<Window1>();
-    //Computer.ItemsSource = new string[] {"Компьютерная мышь", "Клавиатура", "Дисплей", "Блок питания", "Материнская плата", "Наушники"}.OrderBy(x => x);
-    //Home.ItemsSource = new string[] {"Стиральная машина", "Тостер", "Телевизор", "Холодильник", "Утюг", "Кофемашина"}.OrderBy(x => x);
+    SetData("technic");
     Back.Click += OpenForm5;
-    
+  }
+  private void SetData(string type)
+  {
+    Technic.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).Select(x => new
+    {
+      x.Name, x.Price, x.Type
+    });
   }
   private void OpenForm5(object? sender, RoutedEventArgs e)
   {

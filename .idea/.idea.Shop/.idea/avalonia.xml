@@ -14,9 +14,12 @@
         <entry key="Shop/User.axaml" value="Shop/Shop.csproj" />
         <entry key="Shop/User2.axaml" value="Shop/Shop.csproj" />
         <entry key="Shop/Window1.axaml" value="Shop/Shop.csproj" />
+        <entry key="Shop/Windows/Cloth.axaml" value="Shop/Shop.csproj" />
         <entry key="Shop/Windows/Cloth2.axaml" value="Shop/Shop.csproj" />
+        <entry key="Shop/Windows/Food.axaml" value="Shop/Shop.csproj" />
         <entry key="Shop/Windows/Food2.axaml" value="Shop/Shop.csproj" />
         <entry key="Shop/Windows/MainWindow.axaml" value="Shop/Shop.csproj" />
+        <entry key="Shop/Windows/Tecnic.axaml" value="Shop/Shop.csproj" />
         <entry key="Shop/Windows/Tecnic2.axaml" value="Shop/Shop.csproj" />
         <entry key="Shop/Windows/User.axaml" value="Shop/Shop.csproj" />
         <entry key="Shop/Windows/User2.axaml" value="Shop/Shop.csproj" />

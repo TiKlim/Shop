@@ -1,7 +1,6 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
 using System.Linq;
-using System.Reflection;
 
 namespace Shop;
 

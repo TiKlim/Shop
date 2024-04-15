@@ -9,7 +9,8 @@
         MinHeight="800"
         MaxWidth="1280"
         MinWidth="1280"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        x:CompileBindings="False">
 <Window.Background>
                 <ImageBrush Source="C:\Users\prdb\RiderProjects\Shop\Image\view2.jpg"/>
         </Window.Background>
@@ -27,5 +28,21 @@
                                 Корзина
                         </TextBlock>
                 </Button>
+                <ListBox
+                        Margin="10"
+                        Background="AliceBlue"
+                        BorderBrush="Blue" 
+                        CornerRadius="10"
+                        x:Name="Foods" 
+                        SelectionMode="Multiple,Toggle">
+                        <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                        <TextBlock
+                                                Text="{Binding Name}">
+                                        </TextBlock>
+                                </DataTemplate>
+                        </ListBox.ItemTemplate>
+                </ListBox>
         </StackPanel>
+        
 </Window>

@@ -12,7 +12,8 @@ public class DataBase
         new Product("Тостер", 10288,"technic"),
         new Product("Рубашка клетчатая (красный/синий)", 1080,"clothes"),
         new Product("Джинсы JB (летние)", 2300,"clothes"),
-        new Product("Кукурузные хлопья 'Хлопь и Я'", 196,"foods")
+        new Product("Кукурузные хлопья 'Хлопь и Я'", 196,"foods"),
+        new Product("Телевизор 'LC' Smart TV", 93000, "technic"),
+        new Product("Шапка с узором 'Русский орнамент'", 934, "clothes")
     };
-    //public List<Product> Cloths = new List<Product>() { };
 }

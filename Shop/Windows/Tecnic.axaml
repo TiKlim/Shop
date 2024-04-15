@@ -14,20 +14,52 @@
                 <ImageBrush Source="C:\Users\prdb\RiderProjects\Shop\Image\view2.jpg"/>
         </Window.Background>
         <StackPanel>
-                <TextBlock Foreground="Ivory" FontWeight="Medium" Margin="30,20,0,0" FontSize="30">
+                <TextBlock Foreground="Ivory" 
+                           FontWeight="Medium" 
+                           Margin="30,20,0,0" 
+                           FontSize="30">
                         Техника
                 </TextBlock>
-                <Button Classes="menu" Height="40" Width="130" Background="White" Margin="1110,-40,0,0" Name="Back">
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
+                <Button Classes="menu" 
+                        Height="40" 
+                        Width="130" 
+                        Background="White" 
+                        Margin="1110,-40,0,0" 
+                        Name="Back">
+                        <TextBlock VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" 
+                                   Foreground="CornflowerBlue" 
+                                   FontSize="20">
                                 Назад
                         </TextBlock>
                 </Button>
-                <Button Classes="buy" Height="40" Width="230" Background="White" Margin="870,-40,0,0" Name="Basket">
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
+                <Button Classes="buy" 
+                        Height="40" 
+                        Width="230" 
+                        Background="White" 
+                        Margin="870,-40,0,0" 
+                        Name="Basket">
+                        <TextBlock VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" 
+                                   Foreground="CornflowerBlue" 
+                                   FontSize="20">
                                 Корзина
                         </TextBlock>
                 </Button>
-                <ListBox Margin="0,40,0,0" Background="AliceBlue" BorderBrush="Blue" CornerRadius="10" Width="1200" x:Name="Computer" SelectionMode="Multiple,Toggle"/>
-                <!--<ListBox Margin="0,40,0,10" Background="Cornsilk" BorderBrush="Blue" CornerRadius="10" Width="1200" x:Name="Home" SelectionMode="Multiple,Toggle"/>-->
+                <ListBox
+                        Margin="10"
+                        Background="AliceBlue"
+                        BorderBrush="Blue" 
+                        CornerRadius="10"
+                        x:Name="Technic" 
+                        SelectionMode="Multiple,Toggle">
+                        <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                        <TextBlock
+                                                Text="{Binding Name}">
+                                        </TextBlock>
+                                </DataTemplate>
+                        </ListBox.ItemTemplate>
+                </ListBox>
         </StackPanel>
 </Window>

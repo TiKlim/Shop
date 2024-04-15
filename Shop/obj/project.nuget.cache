@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M00/Iu7VDbqs4JGI8nBGFAhDuHLkUmyl/H6zIzmLVCyCV/HU2xn6UWTBUWT/o65M8s620dNk+oORy3X9E2o4AQ==",
+  "dgSpecHash": "6emayytLbOZkf41OemqemhtdRNt1xmXjp77x905AHmVa2Bic20svlx7fKVjkJvojoQGdW41or4cxVlh7cUh5Ag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\prdb\\RiderProjects\\Shop2\\Shop\\Shop.csproj",
+  "projectFilePath": "C:\\Users\\prdb\\RiderProjects\\Shop\\Shop\\Shop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\prdb\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\prdb\\.nuget\\packages\\avalonia\\11.0.10\\avalonia.11.0.10.nupkg.sha512",
