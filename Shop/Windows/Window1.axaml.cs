@@ -2,7 +2,6 @@
 using Avalonia.Interactivity;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Shop;
 
@@ -18,15 +17,10 @@ public partial class Window1 : Window
         new Type(2, "Одежда")
     };
     
-    //protected string name;
-    //protected double price;
-
     public Window1()
     {
         InitializeComponent();
-       
-
-    Dob.Click += DobForm;
+        Dob.Click += DobForm;
     }
     
     private void DobForm(object? sender, RoutedEventArgs e)
@@ -41,7 +35,12 @@ public partial class Window1 : Window
 
         switch (Type.SelectedIndex)
         {
-            case 0: temp = "foods"; break;
+            case 0: temp = "foods"; 
+                break;
+            case 1: temp = "technic"; 
+                break;
+            case 2: temp = "clothes";
+                break;
         }
         Helper.DataObj.Products.Add( new Product(Name.Text!, Convert.ToDouble(Price.Text),temp));
     }
