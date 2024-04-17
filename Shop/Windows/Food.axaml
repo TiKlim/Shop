@@ -29,20 +29,44 @@
                         </TextBlock>
                 </Button>
                 <ListBox
-                        Margin="10"
-                        Background="AliceBlue"
-                        BorderBrush="Blue" 
+                        Margin="30"
+                        Background="Transparent"
                         CornerRadius="10"
                         x:Name="Foods" 
                         SelectionMode="Multiple,Toggle">
+                        <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                        <WrapPanel HorizontalAlignment="Center"/>
+                                </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
                         <ListBox.ItemTemplate>
                                 <DataTemplate>
-                                        <TextBlock
-                                                Text="{Binding Name}">
-                                        </TextBlock>
+                                        <Border Background="Azure"
+                                                    Height="230"
+                                                    Width="240"
+                                                    CornerRadius="10">
+                                                <StackPanel VerticalAlignment="Bottom">
+                                                        <TextBlock
+                                                                Text="{Binding Name}"
+                                                                Foreground="Black"
+                                                                HorizontalAlignment="Center"
+                                                                VerticalAlignment="Bottom"
+                                                                Margin="0,0,0,10"
+                                                                TextWrapping="Wrap"> <!--Path=Price-->
+                                                        </TextBlock>
+                                                        <TextBlock
+                                                                Text="{Binding Price}"
+                                                                Foreground="Green"
+                                                                HorizontalAlignment="Center"
+                                                                VerticalAlignment="Bottom"
+                                                                Margin="0,0,0,20"
+                                                                TextWrapping="Wrap"
+                                                                FontWeight="Heavy"> <!--Path=Price-->
+                                                        </TextBlock>
+                                                </StackPanel>
+                                        </Border>
                                 </DataTemplate>
                         </ListBox.ItemTemplate>
                 </ListBox>
         </StackPanel>
-        
 </Window>
