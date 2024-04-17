@@ -11,13 +11,16 @@
         MinWidth="1280"
         WindowStartupLocation="CenterScreen"
         x:CompileBindings="False">
+        <!--Фон-->
         <Window.Background>
                 <ImageBrush Source="/Assets/view10.jpg"/>
         </Window.Background>
+        <!---->
         <StackPanel>
                 <StackPanel
                         Orientation="Horizontal"
                         Margin="10,10,20,40">
+                        <!--Наименование-->
                         <TextBlock 
                                 Foreground="Ivory"
                                 FontWeight="Medium"
@@ -25,6 +28,7 @@
                                 Margin="10"
                                 Text="Одежда">
                         </TextBlock>
+                        <!--Кнопка "Назад"-->
                         <Button
                                 Classes="basket" 
                                 Background="Green"
@@ -40,6 +44,7 @@
                                         Text="Назад">
                                 </TextBlock>
                         </Button>
+                        <!--Кнопка "Корзина"-->
                         <Button 
                                 Classes="basket"
                                 Background="Green"
@@ -54,6 +59,7 @@
                                         Text="Корзина">
                                 </TextBlock>
                         </Button>
+                        <!--Кнопка "Добавить"-->
                         <Button 
                                 Classes="basket" 
                                 Background="Green"
@@ -69,6 +75,7 @@
                                         Text="Добавить">
                                 </TextBlock>
                         </Button>
+                        <!--Кнопка "Удалить"-->
                         <Button 
                                 Classes="basket"
                                 Background="Green"
@@ -83,6 +90,7 @@
                                         Text="Удалить">
                                 </TextBlock>
                         </Button>
+                        <!--Кнопка "Редактировать"-->
                         <Button
                                 Classes="basket" 
                                 Background="Green" 
@@ -98,6 +106,7 @@
                                 </TextBlock>
                         </Button>
                 </StackPanel>
+                <!--Товары-->
                 <ListBox
                         Margin="10"
                         Background="Transparent"

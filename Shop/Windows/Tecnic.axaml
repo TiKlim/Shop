@@ -10,16 +10,20 @@
         MaxWidth="1280"
         MinWidth="1280"
         WindowStartupLocation="CenterScreen">
+        <!--Фон-->
         <Window.Background>
                 <ImageBrush Source="/Assets/view2.jpg"/>
         </Window.Background>
+        <!---->
         <StackPanel>
+                <!--Техника-->
                 <TextBlock Foreground="Ivory" 
                            FontWeight="Medium" 
                            Margin="30,20,0,0" 
                            FontSize="30">
                         Техника
                 </TextBlock>
+                <!--Кнопка "Назад"-->
                 <Button Classes="menu" 
                         Height="40" 
                         Width="130" 
@@ -33,6 +37,7 @@
                                 Назад
                         </TextBlock>
                 </Button>
+                <!--Кнопка "Корзина"-->
                 <Button Classes="buy" 
                         Height="40" 
                         Width="230" 
@@ -46,6 +51,7 @@
                                 Корзина
                         </TextBlock>
                 </Button>
+                <!--Товары-->
                 <ListBox
                         Margin="30"
                         Background="Transparent"

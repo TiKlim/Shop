@@ -11,23 +11,29 @@
         MinWidth="1280"
         WindowStartupLocation="CenterScreen"
         x:CompileBindings="False">
-<Window.Background>
+        <!--Фон-->
+        <Window.Background>
                 <ImageBrush Source="/Assets/view2.jpg"/>
         </Window.Background>
+        <!---->
         <StackPanel>
+                <!--Продукты-->
                 <TextBlock Foreground="Ivory" FontWeight="Medium" Margin="30,20,0,0" FontSize="30">
                         Продукты
                 </TextBlock>
-                <Button Classes="menu" Height="40" Width="130" Background="White" Margin="1110,-40,0,0" Name="B5">
+                <!--Кнопка "Назад"-->
+                <Button Classes="menu" Height="40" Width="130" Background="White" Margin="1110,-40,0,0" Name="Baccck">
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
                                 Назад
                         </TextBlock>
                 </Button>
+                <!--Кнопка "Корзина"-->
                 <Button Classes="buy" Height="40" Width="230" Background="White" Margin="870,-40,0,0" Name="B4">
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
                                 Корзина
                         </TextBlock>
                 </Button>
+                <!--Товары-->
                 <ListBox
                         Margin="30"
                         Background="Transparent"

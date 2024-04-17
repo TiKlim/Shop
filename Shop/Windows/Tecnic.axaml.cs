@@ -9,17 +9,17 @@ public partial class Tecnic : Window
   public Tecnic()
   {
     InitializeComponent();
-    SetData("technic");
-    Back.Click += OpenForm5;
+    SetData("technic"); //Ссылка на метод листа; Вписываем тип
+    Back.Click += OpenBack; //Создаём метод для кнопки "Назад"
   }
-  private void SetData(string type)
+  private void SetData(string type) //Метод листа
   {
     Technic.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).Select(x => new
     {
       x.Name, x.Price, x.Type
     });
   }
-  private void OpenForm5(object? sender, RoutedEventArgs e)
+  private void OpenBack(object? sender, RoutedEventArgs e) //Метод для кнопки "Назад"
   {
     User user = new User();
     user.Show();

@@ -12,18 +12,44 @@
         MinWidth="1000"
         WindowStartupLocation="CenterScreen">
   <StackPanel Orientation="Horizontal">
-      <Image Source="/Assets/general.png" 
-             Height="80" 
-             Width="80"
-             VerticalAlignment="Center" HorizontalAlignment="Center" Margin="470,0,10,190" />
-      <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-230,0,10,0" FontSize="40" FontStyle="Oblique">
+    <!--Картинка-->
+    <Image Source="/Assets/general.png" 
+           Height="80" 
+           Width="80"
+           VerticalAlignment="Center" 
+           HorizontalAlignment="Center" 
+           Margin="470,0,10,190" />
+    <!--Приветствие-->
+    <TextBlock VerticalAlignment="Center" 
+               HorizontalAlignment="Center" 
+               Margin="-230,0,10,0" 
+               FontSize="40" 
+               FontStyle="Oblique">
         Приветствуем Вас!
-      </TextBlock>
-      <Button Height="50" Width="150" Classes="guest" Margin="-470,260,10,0" Name="B1">
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Azure" FontWeight="Bold" Text="Войти как гость"/>
-      </Button>
-      <Button Height="50" Width="150" Classes="admin" Margin="-70,260,10,0" Name="Admin">
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Orange" FontWeight="Bold" Text="Войти как админ"/>
-      </Button>
+    </TextBlock>
+    <!--Кнопка для гостя-->
+    <Button Height="50" 
+            Width="150" 
+            Classes="guest" 
+            Margin="-470,260,10,0" 
+            Name="Guest">
+        <TextBlock VerticalAlignment="Center" 
+                   HorizontalAlignment="Center" 
+                   Foreground="Azure" 
+                   FontWeight="Bold" 
+                   Text="Войти как гость"/>
+    </Button>
+    <!--Кнопка для админа-->
+    <Button Height="50" 
+            Width="150" 
+            Classes="admin" 
+            Margin="-70,260,10,0" 
+            Name="Admin">
+        <TextBlock VerticalAlignment="Center" 
+                   HorizontalAlignment="Center" 
+                   Foreground="Orange" 
+                   FontWeight="Bold" 
+                   Text="Войти как админ"/>
+    </Button>
     </StackPanel>
 </Window>

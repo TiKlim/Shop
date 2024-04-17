@@ -10,48 +10,113 @@
         MaxWidth="1280"
         MinWidth="1280"
         WindowStartupLocation="CenterScreen">
+        <!--Фон-->
         <Window.Background>
                 <ImageBrush Source="/Assets/view10.jpg"/>
         </Window.Background>
+        <!---->
         <StackPanel>
+                
                 <!--<Border Margin="10" BorderThickness="1">
                         <Border.Effect>
                                 <DropShadowEffect/>
                         </Border.Effect>-->
-                <TextBlock Foreground="White" FontWeight="Medium" Margin="30,20,0,0" FontSize="30">
+                
+                <!--Добро пожаловать-->
+                <TextBlock Foreground="White" 
+                           FontWeight="Medium" 
+                           Margin="30,20,0,0" 
+                           FontSize="30">
                         Добро пожаловать!
                 </TextBlock>
+                
                 <!--</Border>-->
-                <Button Height="40" Width="130" Classes="basket" Margin="1110,-40,0,0" Name="Backk">
-                        <TextBlock Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20">
+                
+                <!--Кнопка "Главная"-->
+                <Button Height="40" 
+                        Width="130" 
+                        Classes="basket" 
+                        Margin="1110,-40,0,0" 
+                        Name="Backk">
+                        <TextBlock Foreground="White" 
+                                   VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" 
+                                   FontSize="20">
                                 Главная
                         </TextBlock>
                 </Button>
-                <Button Height="40" Width="230" Classes="basket" Margin="870,-40,0,0" Name="Basket">
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="20">
+                <!--Кнопка "Корзина"-->
+                <Button Height="40" 
+                        Width="230" 
+                        Classes="basket" 
+                        Margin="870,-40,0,0" 
+                        Name="Basket">
+                        <TextBlock VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" 
+                                   Foreground="White" 
+                                   FontSize="20">
                                 Корзина
                         </TextBlock>
                 </Button>
-                <Button Height="290" Background="White" CornerRadius="12" Margin="130,100,0,0" Name="Products">
+                <!--Карточка "Продукты"-->
+                <Button Height="290" 
+                        Background="White" 
+                        CornerRadius="12" 
+                        Margin="130,100,0,0" 
+                        Name="Products">
                         <StackPanel>
-                                <Image Source="/Assets/food.png" Height="190" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-                                <TextBlock Foreground="#123524" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="32" FontWeight="Bold" Margin="0,20,0,0">
+                                <Image Source="/Assets/food.png" 
+                                       Height="190" 
+                                       HorizontalAlignment="Center" 
+                                       VerticalAlignment="Bottom"/>
+                                <TextBlock Foreground="#123524" 
+                                           VerticalAlignment="Top" 
+                                           HorizontalAlignment="Center" 
+                                           FontSize="32" 
+                                           FontWeight="Bold" 
+                                           Margin="0,20,0,0">
                                         Продукты
                                 </TextBlock>
                         </StackPanel>
                 </Button>
-                <Button Height="290" Background="White" CornerRadius="12" Margin="530,-290,0,0" Name="Tecnic">
+                <!--Карточка "Техника"-->
+                <Button Height="290" 
+                        Background="White" 
+                        CornerRadius="12" 
+                        Margin="530,-290,0,0" 
+                        Name="Technic">
                         <StackPanel>
-                                <Image Source="/Assets/tecnic.png" Height="190" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-                                <TextBlock Foreground="#003153" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="32" FontWeight="Bold" Margin="0,20,0,0">
+                                <Image Source="/Assets/tecnic.png" 
+                                       Height="190" 
+                                       HorizontalAlignment="Center" 
+                                       VerticalAlignment="Bottom"/>
+                                <TextBlock Foreground="#003153" 
+                                           VerticalAlignment="Top" 
+                                           HorizontalAlignment="Center" 
+                                           FontSize="32" 
+                                           FontWeight="Bold" 
+                                           Margin="0,20,0,0">
                                         Техника
                                 </TextBlock>
                         </StackPanel>
                 </Button>
-                <Button Height="290" Background="White" CornerRadius="12" Margin="930,-290,0,0" Name="Clothes">
+                <!--Карточка "Одежда"-->
+                <Button Height="290" 
+                        Background="White" 
+                        CornerRadius="12" 
+                        Margin="930,-290,0,0" 
+                        Name="Clothes">
                         <StackPanel>
-                                <Image Source="/Assets/cloth.png" Height="190" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-                                <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="#013220" FontSize="32" FontWeight="Bold" Margin="0,20,0,0">
+                                <Image Source="/Assets/cloth.png" 
+                                       Height="190" 
+                                       HorizontalAlignment="Center" 
+                                       VerticalAlignment="Bottom"/>
+                                <TextBlock VerticalAlignment="Top" 
+                                           HorizontalAlignment="Center" 
+                                           Foreground="#013220" 
+                                           FontSize="32" 
+                                           FontWeight="Bold" 
+                                           Margin="0,20,0,0">
                                         Одежда
                                 </TextBlock>
                         </StackPanel>

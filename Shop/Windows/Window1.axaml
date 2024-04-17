@@ -11,16 +11,47 @@
         MaxWidth="980"
         MinWidth="980"
         WindowStartupLocation="CenterScreen">
-        <StackPanel >
-                <TextBox Name="Name" Height="20" Margin="0 40  0 0" Watermark="Название товара" Width="400" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBox Name="Price" Height="20" Margin="0 10  0 0" Watermark="Цена" Width="400"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <ComboBox SelectedIndex="0" MaxDropDownHeight="100" Margin="0 10  0 0" HorizontalAlignment="Center" Height="20" Width="400" Name="Type">
+        <StackPanel>
+                <!--Название товара-->
+                <TextBox Name="Name" 
+                         Height="20" 
+                         Margin="0 40 0 0" 
+                         Watermark="Название товара" 
+                         Width="400" 
+                         HorizontalAlignment="Center" 
+                         VerticalAlignment="Center"/>
+                <!--Цена-->
+                <TextBox Name="Price" 
+                         Height="20" 
+                         Margin="0 10 0 0" 
+                         Watermark="Цена" 
+                         Width="400"  
+                         HorizontalAlignment="Center" 
+                         VerticalAlignment="Center"/>
+                <!--Выбор типа продукта-->
+                <ComboBox SelectedIndex="0" 
+                          MaxDropDownHeight="100" 
+                          Margin="0 10  0 0" 
+                          HorizontalAlignment="Center" 
+                          Height="20" 
+                          Width="400" 
+                          Name="Type">
                         <ComboBoxItem >Продукты питания</ComboBoxItem>
                         <ComboBoxItem >Техника</ComboBoxItem>
                         <ComboBoxItem >Одежда</ComboBoxItem>
                 </ComboBox>
-                <Button Height="50" Margin="0 30  0 0" Width="450" Classes="basket"  HorizontalAlignment="Center" VerticalAlignment="Center" Name="Dob">
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold">
+                <!--Добавить-->
+                <Button Height="50" 
+                        Margin="0 30 0 0" 
+                        Width="450" 
+                        Classes="basket"  
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Name="Dob">
+                        <TextBlock VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" 
+                                   Foreground="White" 
+                                   FontWeight="Bold">
                                 Добавить
                         </TextBlock>
                 </Button>

@@ -7,10 +7,7 @@ namespace Shop;
 
 public partial class Window1 : Window
 {
-    private List<Product> goods;
-
-    private Food2 _food2 = new Food2();
-    private List<Type> _types = new List<Type>()
+    private List<Type> _types = new List<Type>() //Лист с типами по индексам и типам, им соответствующим
     {
         new Type(0, "Продукты питания"),
         new Type(1, "Техника"),
@@ -20,20 +17,20 @@ public partial class Window1 : Window
     public Window1()
     {
         InitializeComponent();
-        Dob.Click += DobForm;
+        Dob.Click += DobForm; //Кнопка для метода добавления 
     }
     
-    private void DobForm(object? sender, RoutedEventArgs e)
+    private void DobForm(object? sender, RoutedEventArgs e) //Метод "Добавить"
     {
         CreateProduct();
         Close();
     }
 
-    private void CreateProduct()
+    private void CreateProduct() //Метод создания продукта
     {
         string temp = " ";
 
-        switch (Type.SelectedIndex)
+        switch (Type.SelectedIndex) //Изходя из того, что выбрал пользователь выбираем тип продукта
         {
             case 0: temp = "foods"; 
                 break;
