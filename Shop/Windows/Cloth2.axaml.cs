@@ -12,6 +12,7 @@ public partial class Cloth2 : Window
         SetData("clothes"); //Ссылка на метод листа; Добавляем тип продукта
         Back.Click += BackkOpen; //Метод к кнопке "Назад"
         Add.Click += AddForm; //Метод к кнопке "Добавить"
+        Remove.Click += RemoveForm; //Метод к кнопке "Удалить"
     }
     private void SetData(string type) //Метод листа
     {
@@ -31,5 +32,13 @@ public partial class Cloth2 : Window
         Window1 w1 = new Window1();
         w1.Show();
         SetData("clothes");
+    }
+    private void RemoveForm(object? sender, RoutedEventArgs e) //Метод кнопки "Удалить"
+    {
+        //Window1 w1 = new Window1();
+        //w1.Show();
+        //SetData("clothes");
+        //string temp = "clothes";
+        //Helper.DataObj.Products.Remove( new Product(Name.Text!, Convert.ToDouble(Price.Text),temp));
     }
 }
