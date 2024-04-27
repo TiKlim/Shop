@@ -40,5 +40,11 @@ public partial class Cloth2 : Window
         //SetData("clothes");
         //string temp = "clothes";
         //Helper.DataObj.Products.Remove( new Product(Name.Text!, Convert.ToDouble(Price.Text),temp));
+        //ListBox.SelectObjectCollection selectedItems = new ListBox.SelectObjectCollection(Clothes);
+        if (Clothes.SelectedItem != null)
+        {
+            Clothes.Items.Remove(Clothes.SelectedItem);
+        }
+        SetData("clothes");
     }
 }
