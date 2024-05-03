@@ -1,11 +1,13 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Shop;
 
 public partial class Cloth2 : Window
 {
+    //private List<Product> Clothes1 = new();
     public Cloth2()
     {
         InitializeComponent();
@@ -41,10 +43,17 @@ public partial class Cloth2 : Window
         //string temp = "clothes";
         //Helper.DataObj.Products.Remove( new Product(Name.Text!, Convert.ToDouble(Price.Text),temp));
         //ListBox.SelectObjectCollection selectedItems = new ListBox.SelectObjectCollection(Clothes);
-        if (Clothes.SelectedItem != null)
-        {
-            Clothes.Items.Remove(Clothes.SelectedItem);
-        }
+            //Clothes.Items.Remove(Clothes.Items[1]);
+        Clothes.Items.Clear();
         SetData("clothes");
+        /*if (0 <= Clothes1.Count - 1)
+        {
+            Clothes1.RemoveAt((int)(sender as Button)!.Tag!);
+            for (int i = 0; i < Clothes1.Count; i++)
+            {
+                Clothes1[i].Id = i;
+            }
+            SetData("clothes");
+        }*/
     }
 }

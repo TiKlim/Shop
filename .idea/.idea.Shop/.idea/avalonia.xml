@@ -24,6 +24,7 @@
         <entry key="Shop/Windows/User.axaml" value="Shop/Shop.csproj" />
         <entry key="Shop/Windows/User2.axaml" value="Shop/Shop.csproj" />
         <entry key="Shop/Windows/Window1.axaml" value="Shop/Shop.csproj" />
+        <entry key="Shop/Windows/Window2.axaml" value="Shop/Shop.csproj" />
       </map>
     </option>
   </component>

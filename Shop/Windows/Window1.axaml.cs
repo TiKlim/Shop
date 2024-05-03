@@ -7,6 +7,7 @@ namespace Shop;
 
 public partial class Window1 : Window
 {
+    private List<Product> tovar = new();
     private List<Type> _types = new List<Type>() //Лист с типами по индексам и типам, им соответствующим
     {
         new Type(0, "Продукты питания"),
@@ -39,6 +40,9 @@ public partial class Window1 : Window
             case 2: temp = "clothes";
                 break;
         }
-        Helper.DataObj.Products.Add( new Product(Name.Text!, Convert.ToDouble(Price.Text),temp));
+        //for (int i = 0; i < tovar.Count; i++)
+        //{
+        Helper.DataObj.Products.Add(new Product(Name.Text!, Convert.ToDouble(Price.Text), temp)); //id: i
+        //}
     }
 }
