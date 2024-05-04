@@ -7,7 +7,6 @@ namespace Shop;
 
 public partial class Window1 : Window
 {
-    private List<Product> tovar = new();
     private List<Type> _types = new List<Type>() //Лист с типами по индексам и типам, им соответствующим
     {
         new Type(0, "Продукты питания"),
@@ -25,12 +24,14 @@ public partial class Window1 : Window
     {
         CreateProduct();
         Close();
+        Cloth2 c2 = new Cloth2();
+        c2.Show();
+        c2.Close();
     }
 
     private void CreateProduct() //Метод создания продукта
     {
         string temp = " ";
-
         switch (Type.SelectedIndex) //Изходя из того, что выбрал пользователь выбираем тип продукта
         {
             case 0: temp = "foods"; 
@@ -40,9 +41,6 @@ public partial class Window1 : Window
             case 2: temp = "clothes";
                 break;
         }
-        //for (int i = 0; i < tovar.Count; i++)
-        //{
-        Helper.DataObj.Products.Add(new Product(Name.Text!, Convert.ToDouble(Price.Text), temp)); //id: i
-        //}
+        Helper.DataObj.Products.Add(new Product(Name.Text!, Convert.ToDouble(Price.Text), temp, 0));
     }
 }

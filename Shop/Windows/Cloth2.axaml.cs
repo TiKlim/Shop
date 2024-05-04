@@ -7,20 +7,26 @@ namespace Shop;
 
 public partial class Cloth2 : Window
 {
-    //private List<Product> Clothes1 = new();
     public Cloth2()
     {
         InitializeComponent();
+        if (0 <= Helper.DataObj.Products.Count - 1)
+        {
+            for (int i = 0; i < Helper.DataObj.Products.Count; i++)
+            {
+                Helper.DataObj.Products[i].Idd = i;
+            }
+            Clothes.ItemsSource = Helper.DataObj.Products.ToList();
+        }
         SetData("clothes"); //Ссылка на метод листа; Добавляем тип продукта
         Back.Click += BackkOpen; //Метод к кнопке "Назад"
         Add.Click += AddForm; //Метод к кнопке "Добавить"
-        Remove.Click += RemoveForm; //Метод к кнопке "Удалить"
     }
     private void SetData(string type) //Метод листа
     {
-        Clothes.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).Select(x => new
+        Clothes.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).OrderBy(x => x.Idd).Select(x => new
         {
-            x.Name, x.Price, x.Type
+            x.Name, x.Price, x.Type, x.Idd
         });
     }
     private void BackkOpen(object? sender, RoutedEventArgs e) //Метод кнопки "Назад"
@@ -37,23 +43,15 @@ public partial class Cloth2 : Window
     }
     private void RemoveForm(object? sender, RoutedEventArgs e) //Метод кнопки "Удалить"
     {
-        //Window1 w1 = new Window1();
-        //w1.Show();
-        //SetData("clothes");
-        //string temp = "clothes";
-        //Helper.DataObj.Products.Remove( new Product(Name.Text!, Convert.ToDouble(Price.Text),temp));
-        //ListBox.SelectObjectCollection selectedItems = new ListBox.SelectObjectCollection(Clothes);
-            //Clothes.Items.Remove(Clothes.Items[1]);
-        Clothes.Items.Clear();
-        SetData("clothes");
-        /*if (0 <= Clothes1.Count - 1)
+        if (0 <= Helper.DataObj.Products.Count - 1)
         {
-            Clothes1.RemoveAt((int)(sender as Button)!.Tag!);
-            for (int i = 0; i < Clothes1.Count; i++)
+            Helper.DataObj.Products.RemoveAt((int)(sender as Button)!.Tag!);
+            for (int i = 0; i < Helper.DataObj.Products.Count; i++)
             {
-                Clothes1[i].Id = i;
+                Helper.DataObj.Products[i].Idd = i;
             }
-            SetData("clothes");
-        }*/
+            Clothes.ItemsSource = Helper.DataObj.Products.ToList();
+        }
+        SetData("clothes");
     }
 }

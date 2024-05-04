@@ -5,13 +5,13 @@ public class Product
     private string nameProduct;
     private double priceProduct;
     private string typeProduct;
-    //private int idProduct;
-    public Product(string name, double price, string type)
+    private int idProduct;
+    public Product(string name, double price, string type, int id)
     {
         nameProduct = name;
         priceProduct = price;
         typeProduct = type;
-        //idProduct = id;
+        idProduct = id;
     }
     public string Name
     {
@@ -29,9 +29,9 @@ public class Product
         set { typeProduct = value; }
     }
 
-    /*public int Id
+    public int Idd
     {
         get { return idProduct; }
         set { idProduct = value; }
-    }*/
+    }
 }

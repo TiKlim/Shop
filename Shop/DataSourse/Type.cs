@@ -7,9 +7,9 @@ public class Type
     private int _id;
     private string _type;
 
-    public Type(int id, string type)
+    public Type(int id2, string type)
     {
-        Id = id;
+        Id = id2;
         Type1 = type;
     }
 
