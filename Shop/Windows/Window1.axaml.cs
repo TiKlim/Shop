@@ -24,9 +24,9 @@ public partial class Window1 : Window
     {
         CreateProduct();
         Close();
-        Cloth2 c2 = new Cloth2();
+        /*Cloth2 c2 = new Cloth2();
         c2.Show();
-        c2.Close();
+        c2.Close();*/
     }
 
     private void CreateProduct() //Метод создания продукта

@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace Shop;
 
-public partial class Cloth2 : Window
+public partial class Technic2 : Window
 {
-    public Cloth2()
+    public Technic2()
     {
         InitializeComponent();
         if (0 <= Helper.DataObj.Products.Count - 1)
@@ -15,24 +15,26 @@ public partial class Cloth2 : Window
             {
                 Helper.DataObj.Products[i].Idd = i;
             }
-            Clothes.ItemsSource = Helper.DataObj.Products.ToList();
+            Technics.ItemsSource = Helper.DataObj.Products.ToList();
         }
-        SetData("clothes"); //Ссылка на метод листа; Добавляем тип продукта
-        Back.Click += BackkOpen; //Метод к кнопке "Назад"
+        SetData("technic"); //Ссылка на метод листа; Добавляем тип продукта
+        Obratno.Click += ObratnoForm; //Метод к кнопке "Назад"
         Add.Click += AddForm; //Метод к кнопке "Добавить"
     }
+
     private void SetData(string type) //Метод листа
     {
-        Clothes.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).OrderBy(x => x.Idd).Select(x => new
+        Technics.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).Select(x => new
         {
             x.Name, x.Price, x.Type, x.Idd
         });
     }
-    private void BackkOpen(object? sender, RoutedEventArgs e) //Метод кнопки "Назад"
+
+    private void ObratnoForm(object? sender, RoutedEventArgs e) //Метод кнопки "Назад"
     {
         User2 user2 = new User2();
         user2.Show();
-        this.Close();
+        Close();
     }
     private void AddForm(object? sender, RoutedEventArgs e) //Метод кнопки "Добавить"
     {
@@ -41,9 +43,9 @@ public partial class Cloth2 : Window
         Close();
         Window1 w1 = new Window1();
         w1.Show();
-        SetData("clothes");
+        SetData("technic");
     }
-    private void RemoveForm(object? sender, RoutedEventArgs e) //Метод кнопки "Удалить"
+    private void TechRemoveForm(object? sender, RoutedEventArgs e) //Метод кнопки "Удалить"
     {
         if (0 <= Helper.DataObj.Products.Count - 1)
         {
@@ -52,8 +54,8 @@ public partial class Cloth2 : Window
             {
                 Helper.DataObj.Products[i].Idd = i;
             }
-            Clothes.ItemsSource = Helper.DataObj.Products.ToList();
+            Technics.ItemsSource = Helper.DataObj.Products.ToList();
         }
-        SetData("clothes");
+        SetData("technic");
     }
 }

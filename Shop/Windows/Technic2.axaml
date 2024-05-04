@@ -3,7 +3,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="Shop.Tecnic2"
+        x:Class="Shop.Technic2"
         Title="Tecnic2"
         MaxHeight="800"
         MinHeight="800"
@@ -28,20 +28,20 @@
                                 Margin="10"
                                 Text="Техника">
                         </TextBlock>
-                        <!--Кнопка "Назад"-->
-                        <Button
+                        <!--Кнопка "Добавить"-->
+                        <Button 
                                 Classes="basket" 
                                 Background="Green"
-                                Name="Obratno"
+                                Name="Add"
                                 Height="45"
                                 Width="150"
-                                Margin="40,0,0,0">
+                                Margin="160,0,0,0">
                                 <TextBlock 
                                         VerticalAlignment="Center" 
-                                        HorizontalAlignment="Center"
-                                        Foreground="White"
+                                        HorizontalAlignment="Center" 
+                                        Foreground="White" 
                                         FontSize="20"
-                                        Text="Назад">
+                                        Text="Добавить">
                                 </TextBlock>
                         </Button>
                         <!--Кнопка "Корзина"-->
@@ -59,37 +59,6 @@
                                         Text="Корзина">
                                 </TextBlock>
                         </Button>
-                        <!--Кнопка "Добавить"-->
-                        <Button 
-                                Classes="basket" 
-                                Background="Green"
-                                Name="Add"
-                                Height="45"
-                                Width="150"
-                                Margin="130,0,0,0">
-                                <TextBlock 
-                                        VerticalAlignment="Center" 
-                                        HorizontalAlignment="Center" 
-                                        Foreground="White" 
-                                        FontSize="20"
-                                        Text="Добавить">
-                                </TextBlock>
-                        </Button>
-                        <!--Кнопка "Удалить"-->
-                        <Button 
-                                Classes="basket"
-                                Background="Green"
-                                Name="Remove"
-                                Height="45"
-                                Width="150">
-                                <TextBlock 
-                                        VerticalAlignment="Center"
-                                        HorizontalAlignment="Center"
-                                        Foreground="White" 
-                                        FontSize="20"
-                                        Text="Удалить">
-                                </TextBlock>
-                        </Button>
                         <!--Кнопка "Редактировать"-->
                         <Button
                                 Classes="basket" 
@@ -105,13 +74,29 @@
                                         Text="Редактировать">
                                 </TextBlock>
                         </Button>
+                        <!--Кнопка "Назад"-->
+                        <Button
+                                Classes="basket" 
+                                Background="Green"
+                                Name="Obratno"
+                                Height="45"
+                                Width="150"
+                                Margin="210,0,0,0">
+                                <TextBlock 
+                                        VerticalAlignment="Center" 
+                                        HorizontalAlignment="Center"
+                                        Foreground="White"
+                                        FontSize="20"
+                                        Text="Назад">
+                                </TextBlock>
+                        </Button>
                 </StackPanel>
                 <!--Товары-->
                 <ListBox
                         Margin="10"
                         Background="Transparent"
                         CornerRadius="10"
-                        x:Name="Technic" 
+                        x:Name="Technics" 
                         SelectionMode="Multiple,Toggle">
                         <ListBox.ItemsPanel>
                                 <ItemsPanelTemplate>
@@ -121,7 +106,7 @@
                         <ListBox.ItemTemplate>
                                 <DataTemplate>
                                         <Border Background="Azure"
-                                                    Height="230"
+                                                    Height="270"
                                                     Width="240"
                                                     CornerRadius="10">
                                                 <StackPanel VerticalAlignment="Bottom">
@@ -130,18 +115,51 @@
                                                                 Foreground="Black"
                                                                 HorizontalAlignment="Center"
                                                                 VerticalAlignment="Bottom"
-                                                                Margin="0,0,0,10"
+                                                                Margin="0,0,0,9"
                                                                 TextWrapping="Wrap"> <!--Path=Price-->
                                                         </TextBlock>
                                                         <TextBlock
                                                                 Text="{Binding Price}"
-                                                                Foreground="Green"
+                                                                Foreground="LimeGreen"
                                                                 HorizontalAlignment="Center"
                                                                 VerticalAlignment="Bottom"
-                                                                Margin="0,0,0,20"
+                                                                Margin="0,0,0,10"
                                                                 TextWrapping="Wrap"
                                                                 FontWeight="Heavy"> <!--Path=Price-->
                                                         </TextBlock>
+                                                        <Panel>
+                                                        <Border Background="Green"
+                                                                Height="60"
+                                                                Width="240"
+                                                                Margin="0,0,0,0"
+                                                                CornerRadius="10">
+                                                        </Border>
+                                                        <!--Кнопка "Удалить"-->
+                                                        <Button 
+                                                                Click="TechRemoveForm"
+                                                                Tag="{Binding Idd}"
+                                                                Classes="product"
+                                                                Background="Green"
+                                                                Name="Remove"
+                                                                Height="50"
+                                                                Width="90"
+                                                                Margin="0,10,0,0"
+                                                                CornerRadius="10">
+                                                                <TextBlock 
+                                                                        VerticalAlignment="Center"
+                                                                        HorizontalAlignment="Center"
+                                                                        Foreground="White" 
+                                                                        FontSize="17"
+                                                                        Text="Удалить">
+                                                                </TextBlock>
+                                                        </Button>
+                                                        <Border Background="Green"
+                                                                Height="10"
+                                                                Width="240"
+                                                                Margin="0,0,0,50"
+                                                                CornerRadius="0">  
+                                                        </Border>
+                                                        </Panel>
                                                 </StackPanel>
                                         </Border>
                                 </DataTemplate>

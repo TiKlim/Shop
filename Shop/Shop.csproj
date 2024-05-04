@@ -44,7 +44,7 @@
         <DependentUpon>Tecnic.axaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
-      <Compile Update="Windows\Tecnic2.axaml.cs">
+      <Compile Update="Windows\Technic2.axaml.cs">
         <DependentUpon>Tecnic2.axaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>

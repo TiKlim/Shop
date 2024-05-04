@@ -27,7 +27,7 @@ public partial class User2 : Window
     }
     private void TecOpen(object? sender, RoutedEventArgs e) //Метод для карточки "Техника"
     {
-        Tecnic2 tecnic2 = new Tecnic2();
+        Technic2 tecnic2 = new Technic2();
         tecnic2.Show();
         this.Close();
     }
