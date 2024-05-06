@@ -40,7 +40,7 @@
         <DependentUpon>MainWindow.axaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
-      <Compile Update="Windows\Tecnic.axaml.cs">
+      <Compile Update="Windows\Technic.axaml.cs">
         <DependentUpon>Tecnic.axaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>

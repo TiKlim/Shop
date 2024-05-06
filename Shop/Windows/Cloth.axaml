@@ -29,7 +29,7 @@
                         </TextBlock>
                 </Button>
                 <ListBox
-                        Margin="30"
+                        Margin="10"
                         Background="Transparent"
                         CornerRadius="10"
                         x:Name="Clothes" 
@@ -42,7 +42,7 @@
                         <ListBox.ItemTemplate>
                                 <DataTemplate>
                                         <Border Background="Azure"
-                                                    Height="230"
+                                                    Height="270"
                                                     Width="240"
                                                     CornerRadius="10">
                                                 <StackPanel VerticalAlignment="Bottom">
@@ -51,18 +51,32 @@
                                                                 Foreground="Black"
                                                                 HorizontalAlignment="Center"
                                                                 VerticalAlignment="Bottom"
-                                                                Margin="0,0,0,10"
-                                                                TextWrapping="Wrap"> <!--Path=Price-->
+                                                                Margin="0,0,0,9"
+                                                                TextWrapping="Wrap">
                                                         </TextBlock>
                                                         <TextBlock
                                                                 Text="{Binding Price}"
-                                                                Foreground="Green"
+                                                                Foreground="LimeGreen"
                                                                 HorizontalAlignment="Center"
                                                                 VerticalAlignment="Bottom"
-                                                                Margin="0,0,0,20"
+                                                                Margin="0,0,0,10"
                                                                 TextWrapping="Wrap"
-                                                                FontWeight="Heavy"> <!--Path=Price-->
+                                                                FontWeight="Heavy">
                                                         </TextBlock>
+                                                        <Panel>
+                                                        <Border Background="DarkBlue"
+                                                                Height="60"
+                                                                Width="240"
+                                                                Margin="0,0,0,0"
+                                                                CornerRadius="10">
+                                                        </Border>
+                                                        <Border Background="DarkBlue"
+                                                                Height="10"
+                                                                Width="240"
+                                                                Margin="0,0,0,50"
+                                                                CornerRadius="0">  
+                                                        </Border>
+                                                        </Panel>
                                                 </StackPanel>
                                         </Border>
                                 </DataTemplate>

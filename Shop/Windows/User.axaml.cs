@@ -27,7 +27,7 @@ public partial class User : Window
   }
   private void OpenForm6(object? sender, RoutedEventArgs e) //Метод для карточки "Техника"
   {
-    Tecnic tecnic = new Tecnic();
+    Technic tecnic = new Technic();
     tecnic.Show();
     this.Close();
   }

@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace Shop;
 
-public partial class Tecnic : Window
+public partial class Technic : Window
 {
-  public Tecnic()
+  public Technic()
   {
     InitializeComponent();
     SetData("technic"); //Ссылка на метод листа; Вписываем тип
@@ -14,7 +14,7 @@ public partial class Tecnic : Window
   }
   private void SetData(string type) //Метод листа
   {
-    Technic.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).Select(x => new
+    Technics.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).Select(x => new
     {
       x.Name, x.Price, x.Type
     });
