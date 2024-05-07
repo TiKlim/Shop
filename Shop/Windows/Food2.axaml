@@ -60,21 +60,6 @@
                                         Text="Корзина">
                                 </TextBlock>
                         </Button>
-                        <!--Кнопка "Редактировать"-->
-                        <Button
-                                Classes="basket" 
-                                Background="Green" 
-                                Name="Edit"
-                                Height="45"
-                                Width="210">
-                                <TextBlock 
-                                        VerticalAlignment="Center" 
-                                        HorizontalAlignment="Center" 
-                                        Foreground="White" 
-                                        FontSize="20"
-                                        Text="Редактировать">
-                                </TextBlock>
-                        </Button>
                         <!--Кнопка "Назад"-->
                         <Button
                                 Classes="basket" 
@@ -117,7 +102,7 @@
                                                                 HorizontalAlignment="Center"
                                                                 VerticalAlignment="Bottom"
                                                                 Margin="0,0,0,9"
-                                                                TextWrapping="Wrap"> <!--Path=Price-->
+                                                                TextWrapping="Wrap">
                                                         </TextBlock>
                                                         <TextBlock
                                                                 Text="{Binding Price}"
@@ -126,7 +111,7 @@
                                                                 VerticalAlignment="Bottom"
                                                                 Margin="0,0,0,10"
                                                                 TextWrapping="Wrap"
-                                                                FontWeight="Heavy"> <!--Path=Price-->
+                                                                FontWeight="Heavy">
                                                         </TextBlock>
                                                         <Panel>
                                                         <Border Background="Green"
@@ -135,6 +120,12 @@
                                                                 Margin="0,0,0,0"
                                                                 CornerRadius="10">
                                                         </Border>
+                                                                <Border Background="Green"
+                                                                        Height="10"
+                                                                        Width="240"
+                                                                        Margin="0,0,0,50"
+                                                                        CornerRadius="0">  
+                                                                </Border>
                                                         <!--Кнопка "Удалить"-->
                                                         <Button 
                                                                 Click="FoodRemoveForm"
@@ -142,24 +133,53 @@
                                                                 Classes="product"
                                                                 Background="Green"
                                                                 Name="Remove"
-                                                                Height="50"
-                                                                Width="90"
-                                                                Margin="0,10,0,0"
-                                                                CornerRadius="10">
+                                                                Height="25"
+                                                                Width="240"
+                                                                Margin="0,0,0,30"
+                                                                CornerRadius="0">
                                                                 <TextBlock 
                                                                         VerticalAlignment="Center"
                                                                         HorizontalAlignment="Center"
-                                                                        Foreground="White" 
-                                                                        FontSize="17"
+                                                                        Foreground="DarkRed" 
+                                                                        FontSize="14"
+                                                                        FontWeight="Bold"
                                                                         Text="Удалить">
                                                                 </TextBlock>
                                                         </Button>
-                                                        <Border Background="Green"
-                                                                Height="10"
-                                                                Width="240"
-                                                                Margin="0,0,0,50"
-                                                                CornerRadius="0">  
-                                                        </Border>
+                                                        <!--Кнопка "Редактировать"-->
+                                                        <Button
+                                                                Classes="product" 
+                                                                Background="Green" 
+                                                                Name="Edit"
+                                                                Height="30"
+                                                                Width="130"
+                                                                Margin="0,30,0,0"
+                                                                CornerRadius="10">
+                                                                <TextBlock 
+                                                                        VerticalAlignment="Center" 
+                                                                        HorizontalAlignment="Center" 
+                                                                        Foreground="White" 
+                                                                        FontSize="15"
+                                                                        Text="Редактировать">
+                                                                </TextBlock>
+                                                        </Button>
+                                                        <!--Кнопка "В корзину"-->
+                                                        <Button
+                                                                Classes="product" 
+                                                                Background="Green" 
+                                                                Name="Foodbasket"
+                                                                Height="30"
+                                                                Width="100"
+                                                                Margin="140,30,0,0"
+                                                                CornerRadius="10">
+                                                                <TextBlock 
+                                                                        VerticalAlignment="Center" 
+                                                                        HorizontalAlignment="Center" 
+                                                                        Foreground="White" 
+                                                                        FontSize="15"
+                                                                        Text="В корзину">
+                                                                </TextBlock>
+                                                        </Button>
                                                         </Panel>
                                                 </StackPanel>
                                         </Border>
