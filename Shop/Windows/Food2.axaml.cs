@@ -56,4 +56,9 @@ public partial class Food2 : Window
         }
         SetData("foods");
     }
+    private void FoodEditForm(object? sender, RoutedEventArgs e) //Метод кнопки "Редактировать"
+    {
+        Window1 w1 = new Window1();
+        w1.Show();
+    }
 }
