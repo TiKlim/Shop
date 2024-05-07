@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Клим\\RiderProjects\\Shop\\Shop\\Shop.csproj": {}
+    "C:\\Users\\prdb\\RiderProjects\\Shop\\Shop\\Shop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Клим\\RiderProjects\\Shop\\Shop\\Shop.csproj": {
+    "C:\\Users\\prdb\\RiderProjects\\Shop\\Shop\\Shop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Клим\\RiderProjects\\Shop\\Shop\\Shop.csproj",
+        "projectUniqueName": "C:\\Users\\prdb\\RiderProjects\\Shop\\Shop\\Shop.csproj",
         "projectName": "Shop",
-        "projectPath": "C:\\Users\\Клим\\RiderProjects\\Shop\\Shop\\Shop.csproj",
-        "packagesPath": "C:\\Users\\Клим\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Клим\\RiderProjects\\Shop\\Shop\\obj\\",
+        "projectPath": "C:\\Users\\prdb\\RiderProjects\\Shop\\Shop\\Shop.csproj",
+        "packagesPath": "C:\\Users\\prdb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prdb\\RiderProjects\\Shop\\Shop\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Клим\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\prdb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\prdb\\Desktop\\OfflineNugets": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -89,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

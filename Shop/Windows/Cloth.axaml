@@ -11,23 +11,30 @@
         MinWidth="1280"
         WindowStartupLocation="CenterScreen"
         x:CompileBindings="False">
+        <!--Фон-->
         <Window.Background>
                 <ImageBrush Source="/Assets/view2.jpg"/>
         </Window.Background>
+        <!---->
+        <ScrollViewer>
         <StackPanel>
+                <!--Одежда-->
                 <TextBlock Foreground="Ivory" FontWeight="Medium" Margin="30,20,0,0" FontSize="30">
                         Одежда
                 </TextBlock>
+                <!--Кнопка "Назад"-->
                 <Button Classes="menu" Height="40" Width="130" Background="White" Margin="1110,-40,0,0" Name="Back">
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
                                 Назад
                         </TextBlock>
                 </Button>
+                <!--Кнопка "Корзина"-->
                 <Button Classes="buy" Height="40" Width="230" Background="White" Margin="870,-40,0,0" Name="Basket">
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="CornflowerBlue" FontSize="20">
                                 Корзина
                         </TextBlock>
                 </Button>
+                <!--Товары-->
                 <ListBox
                         Margin="10"
                         Background="Transparent"
@@ -64,13 +71,13 @@
                                                                 FontWeight="Heavy">
                                                         </TextBlock>
                                                         <Panel>
-                                                        <Border Background="DarkBlue"
+                                                        <Border Background="DeepSkyBlue"
                                                                 Height="60"
                                                                 Width="240"
                                                                 Margin="0,0,0,0"
                                                                 CornerRadius="10">
                                                         </Border>
-                                                        <Border Background="DarkBlue"
+                                                        <Border Background="DeepSkyBlue"
                                                                 Height="10"
                                                                 Width="240"
                                                                 Margin="0,0,0,50"
@@ -83,4 +90,5 @@
                         </ListBox.ItemTemplate>
                 </ListBox>
         </StackPanel>
+        </ScrollViewer>
 </Window>

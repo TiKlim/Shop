@@ -16,6 +16,7 @@
                 <ImageBrush Source="/Assets/view10.jpg"/>
         </Window.Background>
         <!---->
+        <ScrollViewer>
         <StackPanel>
                 <StackPanel
                         Orientation="Horizontal"
@@ -166,4 +167,5 @@
                         </ListBox.ItemTemplate>
                 </ListBox>
         </StackPanel>
+        </ScrollViewer>
 </Window>
