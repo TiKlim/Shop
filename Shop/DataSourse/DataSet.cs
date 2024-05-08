@@ -16,4 +16,6 @@ public class DataBase
         new Product("Телевизор 'LC' Smart TV", 93000, "technic", 7),
         new Product("Шапка с узором 'Русский орнамент'", 934, "clothes", 8)
     };
+
+    public List<Product> Basket = new List<Product>() { };
 }

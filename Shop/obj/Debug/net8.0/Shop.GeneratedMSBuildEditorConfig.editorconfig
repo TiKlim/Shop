@@ -20,6 +20,9 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 [C:/Users/prdb/RiderProjects/Shop/Shop/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/prdb/RiderProjects/Shop/Shop/Windows/Basket.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/prdb/RiderProjects/Shop/Shop/Windows/Cloth.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

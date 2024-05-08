@@ -3,54 +3,36 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="Shop.Cloth"
-        Title="Cloth"
+        x:Class="Shop.Windows.Basket"
+        Title="Basket"
         MaxHeight="800"
         MinHeight="800"
         MaxWidth="1280"
         MinWidth="1280"
         WindowStartupLocation="CenterScreen"
         x:CompileBindings="False">
-        <!--Фон-->
-        <Window.Background>
-                <ImageBrush Source="/Assets/view2.jpg"/>
-        </Window.Background>
         <!---->
         <ScrollViewer>
         <StackPanel>
-                <!--Одежда-->
-                <TextBlock Foreground="Ivory" 
+                <!--Корзина-->
+                <TextBlock Foreground="IndianRed" 
                            FontWeight="Medium" 
                            Margin="30,20,0,0" 
                            FontSize="30">
-                        Одежда
+                        Корзина
                 </TextBlock>
                 <!--Кнопка "Назад"-->
                 <Button Classes="menu" 
                         Height="40" 
                         Width="130" 
-                        Background="White" 
+                        Background="IndianRed" 
                         Margin="1110,-40,0,0" 
                         Name="Back">
                         <TextBlock VerticalAlignment="Center" 
                                    HorizontalAlignment="Center" 
-                                   Foreground="CornflowerBlue" 
+                                   Foreground="White" 
                                    FontSize="20">
                                 Назад
-                        </TextBlock>
-                </Button>
-                <!--Кнопка "Корзина"-->
-                <Button Classes="buy" 
-                        Height="40" 
-                        Width="230" 
-                        Background="White" 
-                        Margin="870,-40,0,0" 
-                        Name="Basket">
-                        <TextBlock VerticalAlignment="Center" 
-                                   HorizontalAlignment="Center" 
-                                   Foreground="CornflowerBlue" 
-                                   FontSize="20">
-                                Корзина
                         </TextBlock>
                 </Button>
                 <!--Товары-->
@@ -58,7 +40,7 @@
                         Margin="10"
                         Background="Transparent"
                         CornerRadius="10"
-                        x:Name="Clothes" 
+                        x:Name="Baskett" 
                         SelectionMode="Multiple,Toggle">
                         <ListBox.ItemsPanel>
                                 <ItemsPanelTemplate>
@@ -67,7 +49,7 @@
                         </ListBox.ItemsPanel>
                         <ListBox.ItemTemplate>
                                 <DataTemplate>
-                                        <Border Background="Azure"
+                                        <Border Background="AntiqueWhite"
                                                     Height="270"
                                                     Width="240"
                                                     CornerRadius="10">
@@ -90,13 +72,13 @@
                                                                 FontWeight="Heavy">
                                                         </TextBlock>
                                                         <Panel>
-                                                        <Border Background="DeepSkyBlue"
+                                                        <Border Background="IndianRed"
                                                                 Height="60"
                                                                 Width="240"
                                                                 Margin="0,0,0,0"
                                                                 CornerRadius="10">
                                                         </Border>
-                                                        <Border Background="DeepSkyBlue"
+                                                        <Border Background="IndianRed"
                                                                 Height="10"
                                                                 Width="240"
                                                                 Margin="0,0,0,50"

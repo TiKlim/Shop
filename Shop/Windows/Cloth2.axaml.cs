@@ -1,6 +1,7 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
 using System.Linq;
+using Shop.Windows;
 
 namespace Shop;
 
@@ -20,6 +21,7 @@ public partial class Cloth2 : Window
         SetData("clothes"); //Ссылка на метод листа; Добавляем тип продукта
         Back.Click += BackkOpen; //Метод к кнопке "Назад"
         Add.Click += AddForm; //Метод к кнопке "Добавить"
+        Basket.Click += ToBasketForm; //Метод к кнопке "Корзина"
     }
     private void SetData(string type) //Метод листа
     {
@@ -32,7 +34,7 @@ public partial class Cloth2 : Window
     {
         User2 user2 = new User2();
         user2.Show();
-        this.Close();
+        Close();
     }
     private void AddForm(object? sender, RoutedEventArgs e) //Метод кнопки "Добавить"
     {
@@ -55,5 +57,19 @@ public partial class Cloth2 : Window
             Clothes.ItemsSource = Helper.DataObj.Products.ToList();
         }
         SetData("clothes");
+    }
+    private void Foodbasket(object? sender, RoutedEventArgs e)
+    {
+        //Helper.DataObj.Basket.Add();
+        for (int i = 0; i < Helper.DataObj.Products.Count; i++)
+        {
+            Helper.DataObj.Products[i].Idd = i;
+            Helper.DataObj.Products.InsertRange(i, Helper.DataObj.Basket);
+        }
+    }
+    private void ToBasketForm(object? sender, RoutedEventArgs e) //Метод кнопки "Корзина"
+    {
+        Basket basket = new Basket(); //Storage
+        basket.Show();
     }
 }

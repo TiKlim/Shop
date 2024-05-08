@@ -168,6 +168,7 @@
                                                                 Classes="product" 
                                                                 Background="Green" 
                                                                 Name="Foodbasket"
+                                                                Click="Foodbasket"
                                                                 Height="30"
                                                                 Width="100"
                                                                 Margin="140,30,0,0"
