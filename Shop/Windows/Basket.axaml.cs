@@ -17,7 +17,6 @@ public partial class Basket : Window
             }
             Baskett.ItemsSource = Helper.DataObj.Basket.ToList();
         }
-        //Baskett.ItemsSource = Helper.DataObj.Products.ToList();
         SetData();
         Back.Click += MainForm;
     }
@@ -27,7 +26,7 @@ public partial class Basket : Window
         {
             x.Name, x.Price, x.Type
         });*/
-        Baskett.ItemsSource = Helper.DataObj.Products.OrderBy(x => x.Idd).Select(x => new
+        Baskett.ItemsSource = Helper.DataObj.Basket.OrderBy(x => x.Idd).Select(x => new
         {
             x.Name, x.Price, x.Type, x.Idd
         });

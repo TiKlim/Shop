@@ -91,7 +91,9 @@
                         </ListBox.ItemsPanel>
                         <ListBox.ItemTemplate>
                                 <DataTemplate>
-                                        <Border Background="Azure"
+                                        <Border 
+                                                IsVisible="{Binding}"
+                                                Background="Azure"
                                                     Height="270"
                                                     Width="240"
                                                     CornerRadius="10">

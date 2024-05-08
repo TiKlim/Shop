@@ -27,7 +27,10 @@ public partial class Cloth2 : Window
     {
         Clothes.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).OrderBy(x => x.Idd).Select(x => new
         {
-            x.Name, x.Price, x.Type, x.Idd
+            x.Name, 
+            x.Price,
+            x.Type, 
+            x.Idd
         });
     }
     private void BackkOpen(object? sender, RoutedEventArgs e) //Метод кнопки "Назад"
@@ -61,11 +64,18 @@ public partial class Cloth2 : Window
     private void Foodbasket(object? sender, RoutedEventArgs e)
     {
         //Helper.DataObj.Basket.Add();
-        for (int i = 0; i < Helper.DataObj.Products.Count; i++)
+        /*for (int i = 0; i < Helper.DataObj.Products.Count; i++)
         {
             Helper.DataObj.Products[i].Idd = i;
-            Helper.DataObj.Products.InsertRange(i, Helper.DataObj.Basket);
-        }
+            Helper.DataObj.Basket.InsertRange(i, Helper.DataObj.Products);
+        }*/
+        //Helper.DataObj.Basket.AddRange(Helper.DataObj.Products);
+        /*foreach (var item in Helper.DataObj.Products)
+        {
+            Helper.DataObj.Basket.Add(item);
+        }*/
+        //int a = (int)(sender as Button)!.Tag!;
+        //Helper.DataObj.Basket.Add(a);
     }
     private void ToBasketForm(object? sender, RoutedEventArgs e) //Метод кнопки "Корзина"
     {
