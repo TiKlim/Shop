@@ -69,7 +69,7 @@ public partial class Cloth2 : Window
             Helper.DataObj.Products[i].Idd = i;
             Helper.DataObj.Basket.InsertRange(i, Helper.DataObj.Products);
         }*/
-        //Helper.DataObj.Basket.AddRange(Helper.DataObj.Products);
+        Helper.DataObj.Basket.AddRange(Helper.DataObj.Products);
         /*foreach (var item in Helper.DataObj.Products)
         {
             Helper.DataObj.Basket.Add(item);
