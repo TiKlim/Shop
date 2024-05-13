@@ -1,6 +1,7 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
 using System.Linq;
+using DynamicData;
 using Shop.Windows;
 
 namespace Shop;
@@ -69,13 +70,20 @@ public partial class Cloth2 : Window
             Helper.DataObj.Products[i].Idd = i;
             Helper.DataObj.Basket.InsertRange(i, Helper.DataObj.Products);
         }*/
+        //int i = (int)(sender as Button)!.Tag!;
         Helper.DataObj.Basket.AddRange(Helper.DataObj.Products);
+        //Helper.DataObj.Basket.AddRange();
+        //Helper.DataObj.Products.Add();
         /*foreach (var item in Helper.DataObj.Products)
         {
             Helper.DataObj.Basket.Add(item);
         }*/
         //int a = (int)(sender as Button)!.Tag!;
         //Helper.DataObj.Basket.Add(a);
+        // Retrieve ProductID from the query string
+        //string productId = Request.QueryString["ProductID"];
+        // Add the product to the shopping cart
+        //ShoppingCartBLO.AddItem(productId);
     }
     private void ToBasketForm(object? sender, RoutedEventArgs e) //Метод кнопки "Корзина"
     {
