@@ -1,13 +1,14 @@
-﻿using Avalonia.Controls;
+﻿using System;
+using Avalonia.Controls;
 using Avalonia.Interactivity;
 using System.Linq;
-using DynamicData;
 using Shop.Windows;
 
 namespace Shop;
 
 public partial class Cloth2 : Window
 {
+    public static int[] mas = new int[1];
     public Cloth2()
     {
         InitializeComponent();
@@ -70,8 +71,20 @@ public partial class Cloth2 : Window
             Helper.DataObj.Products[i].Idd = i;
             Helper.DataObj.Basket.InsertRange(i, Helper.DataObj.Products);
         }*/
-        //int i = (int)(sender as Button)!.Tag!;
-        Helper.DataObj.Basket.AddRange(Helper.DataObj.Products);
+        if (0 <= Helper.DataObj.Products.Count - 1)
+        {
+            int i = Convert.ToInt16((Product)(sender as Button)!.Tag!);
+            //Helper.DataObj.massiv[1]
+            //mas[0] = i;
+            Helper.DataObj.Basket.AddRange(Helper.DataObj.Products.Take(i));
+        }
+        Clothes.ItemsSource = Helper.DataObj.Products.ToList();
+        SetData("clothes");
+        /*for (int i = 0; i < Helper.DataObj.Products.Count; i++)
+        {
+            Helper.DataObj.Products[i].Idd = i;
+        }
+        Clothes.ItemsSource = Helper.DataObj.Products.ToList();*/
         //Helper.DataObj.Basket.AddRange();
         //Helper.DataObj.Products.Add();
         /*foreach (var item in Helper.DataObj.Products)
