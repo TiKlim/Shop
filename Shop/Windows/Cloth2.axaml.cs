@@ -73,10 +73,10 @@ public partial class Cloth2 : Window
         }*/
         if (0 <= Helper.DataObj.Products.Count - 1)
         {
-            int i = Convert.ToInt16((Product)(sender as Button)!.Tag!);
+            //int i = Convert.ToInt16((Product)(sender as Button)!.Tag!);
             //Helper.DataObj.massiv[1]
             //mas[0] = i;
-            Helper.DataObj.Basket.AddRange(Helper.DataObj.Products.Take(i));
+            Helper.DataObj.Basket.AddRange(Helper.DataObj.Products.Take(1)); //Take выбирает количество элментов с первого. Получить кокретный элемент не получилось. Take не работает с индексами
         }
         Clothes.ItemsSource = Helper.DataObj.Products.ToList();
         SetData("clothes");
