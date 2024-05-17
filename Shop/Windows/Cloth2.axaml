@@ -142,7 +142,7 @@
                                                                 <TextBlock 
                                                                         VerticalAlignment="Center"
                                                                         HorizontalAlignment="Center"
-                                                                        Foreground="DarkRed" 
+                                                                        Foreground="White" 
                                                                         FontSize="14"
                                                                         FontWeight="Bold"
                                                                         Text="Удалить">
