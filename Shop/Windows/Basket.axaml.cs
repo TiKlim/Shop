@@ -22,10 +22,6 @@ public partial class Basket : Window
     }
     private void SetData()
     {
-        /*Baskett.ItemsSource = Helper.DataObj.Basket.Select(x => new
-        {
-            x.Name, x.Price, x.Type
-        });*/
         Baskett.ItemsSource = Helper.DataObj.Basket.OrderBy(x => x.Idd).Select(x => new
         {
             x.Name, x.Price, x.Type, x.Idd

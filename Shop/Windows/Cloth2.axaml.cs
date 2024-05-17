@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using System.Linq;
@@ -8,7 +9,6 @@ namespace Shop;
 
 public partial class Cloth2 : Window
 {
-    public static int[] mas = new int[1];
     public Cloth2()
     {
         InitializeComponent();
@@ -63,41 +63,12 @@ public partial class Cloth2 : Window
         }
         SetData("clothes");
     }
-    private void Foodbasket(object? sender, RoutedEventArgs e)
+
+    private void Clothbasket(object? sender, RoutedEventArgs e)
     {
-        //Helper.DataObj.Basket.Add();
-        /*for (int i = 0; i < Helper.DataObj.Products.Count; i++)
-        {
-            Helper.DataObj.Products[i].Idd = i;
-            Helper.DataObj.Basket.InsertRange(i, Helper.DataObj.Products);
-        }*/
-        int i = (int)(sender as Button)!.Tag!;
-        Helper.DataObj.Basket.AddRange(Helper.DataObj.Products.Take(1)); //Take выбирает количество элментов с первого. Получить кокретный элемент не получилось. Take не работает с индексами
-        //Helper.DataObj.Basket.Add(Helper.DataObj.Products.ElementAt(i));
-        for (int j = 0; j < Helper.DataObj.Products.Count; j++)
-        {
-            Helper.DataObj.Products[j].Idd = j;
-        }
-        Clothes.ItemsSource = Helper.DataObj.Products.ToList();
-        SetData("clothes");
-        /*for (int i = 0; i < Helper.DataObj.Products.Count; i++)
-        {
-            Helper.DataObj.Products[i].Idd = i;
-        }
-        Clothes.ItemsSource = Helper.DataObj.Products.ToList();*/
-        //Helper.DataObj.Basket.AddRange();
-        //Helper.DataObj.Products.Add();
-        /*foreach (var item in Helper.DataObj.Products)
-        {
-            Helper.DataObj.Basket.Add(item);
-        }*/
-        //int a = (int)(sender as Button)!.Tag!;
-        //Helper.DataObj.Basket.Add(a);
-        // Retrieve ProductID from the query string
-        //string productId = Request.QueryString["ProductID"];
-        // Add the product to the shopping cart
-        //ShoppingCartBLO.AddItem(productId);
+        Helper.DataObj.Basket.Add(Helper.DataObj.Products[(int)(sender as Button)!.Tag!]);
     }
+
     private void ToBasketForm(object? sender, RoutedEventArgs e) //Метод кнопки "Корзина"
     {
         Basket basket = new Basket(); //Storage

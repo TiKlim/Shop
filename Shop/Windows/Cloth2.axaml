@@ -169,8 +169,8 @@
                                                         <Button
                                                                 Classes="product" 
                                                                 Background="Green" 
-                                                                Name="Foodbasket"
-                                                                Click="Foodbasket"
+                                                                Name="basket"
+                                                                Click="Clothbasket"
                                                                 Height="30"
                                                                 Width="100"
                                                                 Margin="140,30,0,0"
