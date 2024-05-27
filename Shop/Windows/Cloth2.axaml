@@ -10,7 +10,8 @@
         MaxWidth="1280"
         MinWidth="1280"
         WindowStartupLocation="CenterScreen"
-        x:CompileBindings="False">
+        x:CompileBindings="False"
+        TransparencyLevelHint="AcrylicBlur">
         <!--Фон-->
         <Window.Background>
                 <ImageBrush Source="/Assets/view10.jpg"/>
@@ -30,13 +31,13 @@
                                 Text="Одежда">
                         </TextBlock>
                         <!--Кнопка "Добавить"-->
+                        <!--Opacity="0.5" делает кнопку полупрозрачной-->
                         <Button 
-                                Classes="basket" 
-                                Background="Green"
+                                Classes="transparent"
                                 Name="Add"
                                 Height="45"
                                 Width="150"
-                                Margin="160,0,0,0">
+                                Margin="620,0,0,0">
                                 <TextBlock 
                                         VerticalAlignment="Center" 
                                         HorizontalAlignment="Center" 
@@ -47,11 +48,11 @@
                         </Button>
                         <!--Кнопка "Корзина"-->
                         <Button 
-                                Classes="basket"
-                                Background="Green"
+                                Classes="transparent"
                                 Name="Basket"
                                 Height="45"
-                                Width="150">
+                                Width="150"
+                                Margin="20,0,0,0">
                                 <TextBlock 
                                         VerticalAlignment="Center" 
                                         HorizontalAlignment="Center" 
@@ -62,12 +63,11 @@
                         </Button>
                         <!--Кнопка "Назад"-->
                         <Button
-                                Classes="basket" 
-                                Background="Green"
+                                Classes="transparent" 
                                 Name="Back"
                                 Height="45"
                                 Width="150"
-                                Margin="210,0,0,0">
+                                Margin="20,0,0,0">
                                 <TextBlock 
                                         VerticalAlignment="Center" 
                                         HorizontalAlignment="Center"

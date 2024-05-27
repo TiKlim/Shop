@@ -9,11 +9,11 @@ public partial class Basket : Window
     public Basket()
     {
         InitializeComponent();
-        if (0 <= Helper.DataObj.Products.Count - 1)
+        if (0 <= Helper.DataObj.Basket.Count - 1)
         {
-            for (int i = 0; i < Helper.DataObj.Products.Count; i++)
+            for (int i = 0; i < Helper.DataObj.Basket.Count; i++)
             {
-                Helper.DataObj.Products[i].Idd = i;
+                Helper.DataObj.Basket[i].Idd = i;
             }
             Baskett.ItemsSource = Helper.DataObj.Basket.ToList();
         }
@@ -30,5 +30,17 @@ public partial class Basket : Window
     private void MainForm(object? sender, RoutedEventArgs e)
     {
         Close();
+    }
+    private void RemoveForm(object? sender, RoutedEventArgs e)
+    {
+        if (0 <= Helper.DataObj.Products.Count - 1)
+        {
+            Helper.DataObj.Basket.RemoveAt((int)(sender as Button)!.Tag!);
+            for (int i = 0; i < Helper.DataObj.Basket.Count; i++)
+            {
+                Helper.DataObj.Basket[i].Idd = i;
+            }
+            Baskett.ItemsSource = Helper.DataObj.Basket.ToList();
+        }
     }
 }

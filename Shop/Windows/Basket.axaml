@@ -84,6 +84,25 @@
                                                                 Margin="0,0,0,50"
                                                                 CornerRadius="0">  
                                                         </Border>
+                                                                <!--Кнопка "Убрать"-->
+                                                                <Button 
+                                                                        Click="RemoveForm"
+                                                                        Tag="{Binding Idd}"
+                                                                        Background="IndianRed"
+                                                                        Name="Remove"
+                                                                        Height="25"
+                                                                        Width="240"
+                                                                        Margin="0,0,0,30"
+                                                                        CornerRadius="0">
+                                                                        <TextBlock 
+                                                                                VerticalAlignment="Center"
+                                                                                HorizontalAlignment="Center"
+                                                                                Foreground="White" 
+                                                                                FontSize="14"
+                                                                                FontWeight="Bold"
+                                                                                Text="Убрать">
+                                                                        </TextBlock>
+                                                                </Button>
                                                         </Panel>
                                                 </StackPanel>
                                         </Border>

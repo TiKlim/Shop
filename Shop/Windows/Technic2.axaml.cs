@@ -1,6 +1,7 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
 using System.Linq;
+using Shop.Windows;
 
 namespace Shop;
 
@@ -20,6 +21,7 @@ public partial class Technic2 : Window
         SetData("technic"); //Ссылка на метод листа; Добавляем тип продукта
         Obratno.Click += ObratnoForm; //Метод к кнопке "Назад"
         Add.Click += AddForm; //Метод к кнопке "Добавить"
+        Basket.Click += ToBasketForm; //Метод к кнопке "Корзина"
     }
 
     private void SetData(string type) //Метод листа
@@ -57,5 +59,16 @@ public partial class Technic2 : Window
             Technics.ItemsSource = Helper.DataObj.Products.ToList();
         }
         SetData("technic");
+    }
+    
+    private void TechBasket(object? sender, RoutedEventArgs e)
+    {
+        Helper.DataObj.Basket.Add(Helper.DataObj.Products[(int)(sender as Button)!.Tag!]);
+    }
+    
+    private void ToBasketForm(object? sender, RoutedEventArgs e) //Метод кнопки "Корзина"
+    {
+        Basket basket = new Basket(); //Storage
+        basket.Show();
     }
 }

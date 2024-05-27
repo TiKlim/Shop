@@ -16,6 +16,9 @@
         </Window.Background>
         <!---->
         <StackPanel>
+                <StackPanel
+                        Orientation="Horizontal"
+                        Margin="0,20,20,40">
                 
                 <!--<Border Margin="10" BorderThickness="1">
                         <Border.Effect>
@@ -25,31 +28,18 @@
                 <!--Добро пожаловать-->
                 <TextBlock Foreground="White" 
                            FontWeight="Medium" 
-                           Margin="30,20,0,0" 
+                           Margin="30,0,0,0" 
                            FontSize="30">
                         Добро пожаловать!
                 </TextBlock>
                 
                 <!--</Border>-->
                 
-                <!--Кнопка "Главная"-->
-                <Button Height="40" 
-                        Width="130" 
-                        Classes="basket" 
-                        Margin="1110,-40,0,0" 
-                        Name="Backk">
-                        <TextBlock Foreground="White" 
-                                   VerticalAlignment="Center" 
-                                   HorizontalAlignment="Center" 
-                                   FontSize="20">
-                                Главная
-                        </TextBlock>
-                </Button>
                 <!--Кнопка "Корзина"-->
                 <Button Height="40" 
-                        Width="230" 
+                        Width="150" 
                         Classes="basket" 
-                        Margin="870,-40,0,0" 
+                        Margin="620,0,0,0" 
                         Name="Basket">
                         <TextBlock VerticalAlignment="Center" 
                                    HorizontalAlignment="Center" 
@@ -58,6 +48,20 @@
                                 Корзина
                         </TextBlock>
                 </Button>
+                <!--Кнопка "Главная"-->
+                <Button Height="40" 
+                        Width="150" 
+                        Classes="basket" 
+                        Margin="20,0,0,0" 
+                        Name="Backk">
+                        <TextBlock Foreground="White" 
+                                   VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" 
+                                   FontSize="20">
+                                Главная
+                        </TextBlock>
+                </Button>
+                </StackPanel>
                 <!--Карточка "Продукты"-->
                 <Button Height="290" 
                         Background="White" 

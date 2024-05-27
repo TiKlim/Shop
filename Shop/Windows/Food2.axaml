@@ -36,7 +36,7 @@
                                 Name="Add"
                                 Height="45"
                                 Width="150"
-                                Margin="160,0,0,0">
+                                Margin="590,0,0,0">
                                 <TextBlock 
                                         VerticalAlignment="Center" 
                                         HorizontalAlignment="Center" 
@@ -51,7 +51,8 @@
                                 Background="Green"
                                 Name="Basket"
                                 Height="45"
-                                Width="150">
+                                Width="150"
+                                Margin="20,0,0,0">
                                 <TextBlock 
                                         VerticalAlignment="Center" 
                                         HorizontalAlignment="Center" 
@@ -67,7 +68,7 @@
                                 Name="Backkk"
                                 Height="45"
                                 Width="150"
-                                Margin="210,0,0,0">
+                                Margin="20,0,0,0">
                                 <TextBlock 
                                         VerticalAlignment="Center" 
                                         HorizontalAlignment="Center"
@@ -169,6 +170,8 @@
                                                                 Classes="product" 
                                                                 Background="Green" 
                                                                 Name="Foodbasket"
+                                                                Click="FoodBasket"
+                                                                Tag="{Binding Idd}"
                                                                 Height="30"
                                                                 Width="100"
                                                                 Margin="140,30,0,0"
