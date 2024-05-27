@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
 using System.Linq;
 using Shop.Windows;
@@ -64,7 +62,7 @@ public partial class Cloth2 : Window
         SetData("clothes");
     }
 
-    private void Clothbasket(object? sender, RoutedEventArgs e)
+    private void ClothBasket(object? sender, RoutedEventArgs e)
     {
         Helper.DataObj.Basket.Add(Helper.DataObj.Products[(int)(sender as Button)!.Tag!]);
     }
