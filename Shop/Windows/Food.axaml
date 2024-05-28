@@ -43,7 +43,7 @@
                         Height="40" 
                         Width="230" 
                         Margin="870,-40,0,0" 
-                        Name="B4">
+                        Name="Basket">
                         <TextBlock VerticalAlignment="Center" 
                                    HorizontalAlignment="Center" 
                                    Foreground="White" 

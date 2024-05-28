@@ -1,6 +1,7 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
 using System.Linq;
+using Shop.Windows;
 
 namespace Shop;
 
@@ -10,7 +11,8 @@ public partial class Cloth : Window
   {
     InitializeComponent();
     SetData("clothes");
-    Back.Click += OpenForm8;
+    Back.Click += OpenForm8; //Метод для кнопки "Назад"
+    Basket.Click += ToBasket; //Метод перехода в корзину
   }
   private void SetData(string type)
   {
@@ -23,11 +25,15 @@ public partial class Cloth : Window
   {
     User user = new User();
     user.Show();
-    this.Close();
+    Close();
   }
-  
   private void UserBasket(object? sender, RoutedEventArgs e) //Метод кнопки "Добавить в корзину"
   {
     Helper.DataObj.Basket.Add(Helper.DataObj.Products[(int)(sender as Button)!.Tag!]);
+  }
+  private void ToBasket(object? sender, RoutedEventArgs e)
+  {
+    Basket basket = new Basket();
+    basket.Show();
   }
 }
