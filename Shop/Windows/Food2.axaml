@@ -31,8 +31,7 @@
                         </TextBlock>
                         <!--Кнопка "Добавить"-->
                         <Button 
-                                Classes="basket" 
-                                Background="Green"
+                                Classes="transparent" 
                                 Name="Add"
                                 Height="45"
                                 Width="150"
@@ -47,8 +46,7 @@
                         </Button>
                         <!--Кнопка "Корзина"-->
                         <Button 
-                                Classes="basket"
-                                Background="Green"
+                                Classes="transparent"
                                 Name="Basket"
                                 Height="45"
                                 Width="150"
@@ -63,8 +61,7 @@
                         </Button>
                         <!--Кнопка "Назад"-->
                         <Button
-                                Classes="basket" 
-                                Background="Green"
+                                Classes="transparent" 
                                 Name="Backkk"
                                 Height="45"
                                 Width="150"
@@ -153,6 +150,7 @@
                                                                 Background="Green" 
                                                                 Name="Edit"
                                                                 Click="FoodEditForm"
+                                                                Tag="{Binding Idd}"
                                                                 Height="30"
                                                                 Width="130"
                                                                 Margin="0,30,0,0"

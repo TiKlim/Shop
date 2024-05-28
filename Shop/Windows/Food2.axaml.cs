@@ -66,8 +66,10 @@ public partial class Food2 : Window
     
     private void FoodEditForm(object? sender, RoutedEventArgs e) //Метод кнопки "Редактировать"
     {
-        Window1 w1 = new Window1();
-        w1.Show();
+        int i = (int)(sender as Button)!.Tag!;
+        Helper.Edit[0] = i;
+        Window2 w2 = new Window2();
+        w2.Show();
     }
     
     private void ToBasketForm(object? sender, RoutedEventArgs e) //Метод кнопки "Корзина"

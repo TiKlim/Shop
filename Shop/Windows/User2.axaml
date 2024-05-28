@@ -38,7 +38,7 @@
                 <!--Кнопка "Корзина"-->
                 <Button Height="40" 
                         Width="150" 
-                        Classes="basket" 
+                        Classes="transparent" 
                         Margin="620,0,0,0" 
                         Name="Basket">
                         <TextBlock VerticalAlignment="Center" 
@@ -51,7 +51,7 @@
                 <!--Кнопка "Главная"-->
                 <Button Height="40" 
                         Width="150" 
-                        Classes="basket" 
+                        Classes="transparent" 
                         Margin="20,0,0,0" 
                         Name="Backk">
                         <TextBlock Foreground="White" 

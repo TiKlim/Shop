@@ -31,8 +31,7 @@
                         </TextBlock>
                         <!--Кнопка "Добавить"-->
                         <Button 
-                                Classes="basket" 
-                                Background="Green"
+                                Classes="transparent" 
                                 Name="Add"
                                 Height="45"
                                 Width="150"
@@ -47,8 +46,7 @@
                         </Button>
                         <!--Кнопка "Корзина"-->
                         <Button 
-                                Classes="basket"
-                                Background="Green"
+                                Classes="transparent"
                                 Name="Basket"
                                 Height="45"
                                 Width="150"
@@ -63,8 +61,7 @@
                         </Button>
                         <!--Кнопка "Назад"-->
                         <Button
-                                Classes="basket" 
-                                Background="Green"
+                                Classes="transparent" 
                                 Name="Obratno"
                                 Height="45"
                                 Width="150"

@@ -3,9 +3,9 @@ using Avalonia.Interactivity;
 using System;
 using System.Collections.Generic;
 
-namespace Shop;
+namespace Shop.Windows;
 
-public partial class Window1 : Window
+public partial class Window2 : Window
 {
     private List<Type> _types = new List<Type>() //Лист с типами по индексам и типам, им соответствующим
     {
@@ -14,22 +14,21 @@ public partial class Window1 : Window
         new Type(2, "Одежда")
     };
     
-    public Window1()
+    public Window2()
     {
         InitializeComponent();
-        Dob.Click += DobForm; //Кнопка для метода добавления
+        Edit.Click += EditForm; //Кнопка для метода добавления
+        Price.Text = Convert.ToString(Helper.DataObj.Products[Helper.Edit[0]].Price);
+        Name.Text = Helper.DataObj.Products[Helper.Edit[0]].Name;
     }
     
-    private void DobForm(object? sender, RoutedEventArgs e) //Метод "Добавить"
+    private void EditForm(object? sender, RoutedEventArgs e) //Метод "Добавить"
     {
-        CreateProduct();
+        EditProduct();
         Close();
-        /*Cloth2 c2 = new Cloth2();
-        c2.Show();
-        c2.Close();*/
     }
 
-    private void CreateProduct() //Метод создания продукта
+    private void EditProduct() //Метод создания продукта
     {
         string temp = " ";
         switch (Type.SelectedIndex) //Изходя из того, что выбрал пользователь выбираем тип продукта
@@ -41,6 +40,8 @@ public partial class Window1 : Window
             case 2: temp = "clothes";
                 break;
         }
-        Helper.DataObj.Products.Add(new Product(Name.Text!, Convert.ToDouble(Price.Text), temp, 0));
+        Helper.DataObj.Products[Helper.Edit[0]].Name = Name.Text;
+        Helper.DataObj.Products[Helper.Edit[0]].Price = Convert.ToDouble(Price.Text);
+        Helper.DataObj.Products[Helper.Edit[0]].Type = temp;
     }
 }
