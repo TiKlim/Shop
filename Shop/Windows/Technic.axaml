@@ -115,7 +115,7 @@
                                                                         Click="UserBasket"
                                                                         Tag="{Binding Idd}"
                                                                         Classes="transparent2"
-                                                                        Name="Remove"
+                                                                        Name="UserBasket"
                                                                         HorizontalAlignment="Center"
                                                                         VerticalAlignment="Center"
                                                                         Height="25"

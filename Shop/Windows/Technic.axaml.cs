@@ -10,6 +10,14 @@ public partial class Technic : Window
   public Technic()
   {
     InitializeComponent();
+    if (0 <= Helper.DataObj.Products.Count - 1)
+    {
+      for (int i = 0; i < Helper.DataObj.Products.Count; i++)
+      {
+        Helper.DataObj.Products[i].Idd = i;
+      }
+      Technics.ItemsSource = Helper.DataObj.Products.ToList();
+    }
     SetData("technic"); //Ссылка на метод листа; Вписываем тип
     Back.Click += OpenBack; //Создаём метод для кнопки "Назад"
     Basket.Click += ToBasket; //Метод перехода в корзину
@@ -18,7 +26,7 @@ public partial class Technic : Window
   {
     Technics.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).Select(x => new
     {
-      x.Name, x.Price, x.Type
+      x.Name, x.Price, x.Type, x.Idd
     });
   }
   private void OpenBack(object? sender, RoutedEventArgs e) //Метод для кнопки "Назад"

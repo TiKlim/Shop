@@ -10,6 +10,14 @@ public partial class Cloth : Window
   public Cloth()
   {
     InitializeComponent();
+    if (0 <= Helper.DataObj.Products.Count - 1)
+    {
+      for (int i = 0; i < Helper.DataObj.Products.Count; i++)
+      {
+        Helper.DataObj.Products[i].Idd = i;
+      }
+      Clothes.ItemsSource = Helper.DataObj.Products.ToList();
+    }
     SetData("clothes");
     Back.Click += OpenForm8; //Метод для кнопки "Назад"
     Basket.Click += ToBasket; //Метод перехода в корзину
@@ -18,7 +26,7 @@ public partial class Cloth : Window
   {
     Clothes.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).Select(x => new
     {
-      x.Name, x.Price, x.Type
+      x.Name, x.Price, x.Type, x.Idd
     });
   }
   private void OpenForm8(object? sender, RoutedEventArgs e)
