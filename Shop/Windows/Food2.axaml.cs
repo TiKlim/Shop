@@ -1,6 +1,7 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
 using System.Linq;
+using Avalonia.Controls.Shapes;
 using Shop.Windows;
 
 namespace Shop;
@@ -38,9 +39,9 @@ public partial class Food2 : Window
     }
     private void AddForm(object? sender, RoutedEventArgs e) //Метод кнопки "Добавить"
     {
-        User2 u2 = new User2();
+        /*User2 u2 = new User2();
         u2.Show();
-        Close();
+        Close();*/
         Window1 w1 = new Window1();
         w1.Show();
         SetData("foods");
