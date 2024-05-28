@@ -18,7 +18,7 @@
         <StackPanel>
                 <StackPanel
                         Orientation="Horizontal"
-                        Margin="0,20,20,40">
+                        Margin="0,20,20,0">
                 
                 <!--<Border Margin="10" BorderThickness="1">
                         <Border.Effect>
@@ -61,6 +61,18 @@
                                 Главная
                         </TextBlock>
                 </Button>
+                </StackPanel>
+                <StackPanel
+                        Orientation="Horizontal"
+                        Margin="20,0,0,0">
+                        <!--Наименование-->
+                        <TextBlock 
+                                Foreground="Ivory"
+                                FontWeight="Medium"
+                                FontSize="20"
+                                Margin="10"
+                                Text="Админ">
+                        </TextBlock>
                 </StackPanel>
                 <!--Карточка "Продукты"-->
                 <Button Height="290" 

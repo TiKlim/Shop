@@ -20,7 +20,7 @@
         <StackPanel>
                 <StackPanel
                         Orientation="Horizontal"
-                        Margin="10,10,20,40">
+                        Margin="10,10,20,0">
                         <!--Наименование-->
                         <TextBlock 
                                 Foreground="Ivory"
@@ -74,6 +74,18 @@
                                         Text="Назад">
                                 </TextBlock>
                         </Button>
+                </StackPanel>
+                <StackPanel
+                        Orientation="Horizontal"
+                        Margin="12,0,0,0">
+                        <!--Наименование-->
+                        <TextBlock 
+                                Foreground="Ivory"
+                                FontWeight="Medium"
+                                FontSize="20"
+                                Margin="10"
+                                Text="Админ">
+                        </TextBlock>
                 </StackPanel>
                 <!--Товары-->
                 <ListBox

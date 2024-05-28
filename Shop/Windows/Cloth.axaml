@@ -21,7 +21,7 @@
                 <!--Одежда-->
                 <TextBlock Foreground="Ivory" 
                            FontWeight="Medium" 
-                           Margin="30,20,0,0" 
+                           Margin="20,20,0,0" 
                            FontSize="30">
                         Одежда
                 </TextBlock>
@@ -53,6 +53,18 @@
                                 Корзина
                         </TextBlock>
                 </Button>
+                <StackPanel
+                        Orientation="Horizontal"
+                        Margin="14,0,0,0">
+                        <!--Наименование-->
+                        <TextBlock 
+                                Foreground="Ivory"
+                                FontWeight="Medium"
+                                FontSize="20"
+                                Margin="10"
+                                Text="Гость">
+                        </TextBlock>
+                </StackPanel>
                 <!--Товары-->
                 <ListBox
                         Margin="10"
