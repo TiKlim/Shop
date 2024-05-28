@@ -130,11 +130,12 @@
                                                                 Tag="{Binding Idd}"
                                                                 Classes="product"
                                                                 Background="Green"
+                                                                HorizontalAlignment="Center"
                                                                 Name="Remove"
                                                                 Height="25"
-                                                                Width="240"
+                                                                Width="100"
                                                                 Margin="0,0,0,30"
-                                                                CornerRadius="0">
+                                                                CornerRadius="10">
                                                                 <TextBlock 
                                                                         VerticalAlignment="Center"
                                                                         HorizontalAlignment="Center"

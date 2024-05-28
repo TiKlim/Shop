@@ -73,7 +73,7 @@
                                        Height="190" 
                                        HorizontalAlignment="Center" 
                                        VerticalAlignment="Bottom"/>
-                                <TextBlock Foreground="#123524" 
+                                <TextBlock Foreground="White" 
                                            VerticalAlignment="Top" 
                                            HorizontalAlignment="Center" 
                                            FontSize="32" 
@@ -94,7 +94,7 @@
                                        Height="190" 
                                        HorizontalAlignment="Center" 
                                        VerticalAlignment="Bottom"/>
-                                <TextBlock Foreground="#003153" 
+                                <TextBlock Foreground="White" 
                                            VerticalAlignment="Top" 
                                            HorizontalAlignment="Center" 
                                            FontSize="32" 
@@ -117,7 +117,7 @@
                                        VerticalAlignment="Bottom"/>
                                 <TextBlock VerticalAlignment="Top" 
                                            HorizontalAlignment="Center" 
-                                           Foreground="#013220" 
+                                           Foreground="White" 
                                            FontSize="32" 
                                            FontWeight="Bold" 
                                            Margin="0,20,0,0">
