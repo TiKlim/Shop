@@ -25,4 +25,8 @@ public partial class Food : Window
     user.Show();
     this.Close();
   }
+  private void UserBasket(object? sender, RoutedEventArgs e) //Метод кнопки "Добавить в корзину"
+  {
+    Helper.DataObj.Basket.Add(Helper.DataObj.Products[(int)(sender as Button)!.Tag!]);
+  }
 }

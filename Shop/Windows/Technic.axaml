@@ -25,29 +25,27 @@
                         Техника
                 </TextBlock>
                 <!--Кнопка "Назад"-->
-                <Button Classes="menu" 
+                <Button Classes="transparent2" 
                         Height="40" 
                         Width="130" 
-                        Background="White" 
                         Margin="1110,-40,0,0" 
                         Name="Back">
                         <TextBlock VerticalAlignment="Center" 
                                    HorizontalAlignment="Center" 
-                                   Foreground="CornflowerBlue" 
+                                   Foreground="White" 
                                    FontSize="20">
                                 Назад
                         </TextBlock>
                 </Button>
                 <!--Кнопка "Корзина"-->
-                <Button Classes="buy" 
+                <Button Classes="transparent2" 
                         Height="40" 
                         Width="230" 
-                        Background="White" 
                         Margin="870,-40,0,0" 
                         Name="Basket">
                         <TextBlock VerticalAlignment="Center" 
                                    HorizontalAlignment="Center" 
-                                   Foreground="CornflowerBlue" 
+                                   Foreground="White" 
                                    FontSize="20">
                                 Корзина
                         </TextBlock>
@@ -93,7 +91,7 @@
                                                         </TextBlock>
                                                         <TextBlock
                                                                 Text="{Binding Price}"
-                                                                Foreground="LimeGreen"
+                                                                Foreground="SeaGreen"
                                                                 HorizontalAlignment="Center"
                                                                 VerticalAlignment="Bottom"
                                                                 Margin="0,0,0,10"
@@ -113,6 +111,26 @@
                                                                 Margin="0,0,0,50"
                                                                 CornerRadius="0">  
                                                         </Border>
+                                                                <Button 
+                                                                        Click="UserBasket"
+                                                                        Tag="{Binding Idd}"
+                                                                        Classes="transparent2"
+                                                                        Name="Remove"
+                                                                        HorizontalAlignment="Center"
+                                                                        VerticalAlignment="Center"
+                                                                        Height="25"
+                                                                        Width="140"
+                                                                        Margin="0,0,0,30"
+                                                                        CornerRadius="10">
+                                                                        <TextBlock 
+                                                                                VerticalAlignment="Center"
+                                                                                HorizontalAlignment="Center"
+                                                                                Foreground="White" 
+                                                                                FontSize="14"
+                                                                                FontWeight="Bold"
+                                                                                Text="В КОРЗИНУ">
+                                                                        </TextBlock>
+                                                                </Button>
                                                         </Panel>
                                                 </StackPanel>
                                         </Border>

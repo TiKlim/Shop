@@ -26,10 +26,10 @@
                 <!--Кнопка "Главная"-->
                 <Button Height="40" 
                         Width="130" 
-                        Classes="menu" 
+                        Classes="transparent2" 
                         Margin="1110,-40,0,0" 
                         Name="Main">
-                        <TextBlock Foreground="CornflowerBlue" 
+                        <TextBlock Foreground="White" 
                                    VerticalAlignment="Center" 
                                    HorizontalAlignment="Center" 
                                    FontSize="20">
@@ -39,12 +39,12 @@
                 <!--Кнопка "Корзина"-->
                 <Button Height="40" 
                         Width="230" 
-                        Classes="buy" 
+                        Classes="transparent2" 
                         Margin="870,-40,0,0" 
                         Name="Basket">
                         <TextBlock VerticalAlignment="Center" 
                                    HorizontalAlignment="Center" 
-                                   Foreground="CornflowerBlue" 
+                                   Foreground="White" 
                                    FontSize="20">
                                 Корзина
                         </TextBlock>
@@ -72,7 +72,7 @@
                                        Height="190" 
                                        HorizontalAlignment="Center" 
                                        VerticalAlignment="Bottom"/>
-                                <TextBlock Classes="food" 
+                                <TextBlock Foreground="White" 
                                            VerticalAlignment="Top" 
                                            HorizontalAlignment="Center" 
                                            FontSize="32" 
@@ -95,7 +95,7 @@
                                        VerticalAlignment="Bottom"/>
                                 <TextBlock VerticalAlignment="Top" 
                                            HorizontalAlignment="Center" 
-                                           Foreground="DarkSlateGray" 
+                                           Foreground="White" 
                                            FontSize="32" 
                                            FontWeight="Bold" 
                                            Margin="0,20,0,0">
@@ -116,7 +116,7 @@
                                        VerticalAlignment="Bottom"/>
                                 <TextBlock VerticalAlignment="Top" 
                                            HorizontalAlignment="Center" 
-                                           Foreground="SteelBlue"
+                                           Foreground="White"
                                            FontSize="32" 
                                            FontWeight="Bold" 
                                            Margin="0,20,0,0">
