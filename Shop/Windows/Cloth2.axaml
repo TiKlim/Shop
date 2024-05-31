@@ -30,21 +30,6 @@
                                 Margin="10"
                                 Text="Одежда">
                         </TextBlock>
-                        <!--Кнопка "Обновить"-->
-                        <Button 
-                                Classes="transparent"
-                                Name="UpdateC"
-                                Height="45"
-                                Width="150"
-                                Margin="450,0,0,0">
-                                <TextBlock 
-                                        VerticalAlignment="Center" 
-                                        HorizontalAlignment="Center" 
-                                        Foreground="White" 
-                                        FontSize="20"
-                                        Text="Обновить">
-                                </TextBlock>
-                        </Button>
                         <!--Кнопка "Добавить"-->
                         <!--Opacity="0.5" делает кнопку полупрозрачной-->
                         <Button 
@@ -52,7 +37,7 @@
                                 Name="Add"
                                 Height="45"
                                 Width="150"
-                                Margin="20,0,0,0">
+                                Margin="620,0,0,0">
                                 <TextBlock 
                                         VerticalAlignment="Center" 
                                         HorizontalAlignment="Center" 
@@ -180,7 +165,9 @@
                                                         <Button
                                                                 Classes="product" 
                                                                 Background="Green" 
-                                                                Name="Edit"
+                                                                Name="ClothEditForm"
+                                                                Click="ClothEditForm"
+                                                                Tag="{Binding Idd}"
                                                                 Height="30"
                                                                 Width="130"
                                                                 Margin="0,30,0,0"

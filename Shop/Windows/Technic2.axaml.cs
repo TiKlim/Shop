@@ -1,4 +1,5 @@
-﻿using Avalonia.Controls;
+﻿using System.ComponentModel.DataAnnotations;
+using Avalonia.Controls;
 using Avalonia.Interactivity;
 using System.Linq;
 using Shop.Windows;
@@ -22,14 +23,6 @@ public partial class Technic2 : Window
         Obratno.Click += ObratnoForm; //Метод к кнопке "Назад"
         Add.Click += AddForm; //Метод к кнопке "Добавить"
         Basket.Click += ToBasketForm; //Метод к кнопке "Корзина"
-        UpdateT.Click += UpdateTOnClick;
-    }
-
-    private void UpdateTOnClick(object? sender, RoutedEventArgs e)
-    {
-        Close();
-        Technic2 t2 = new Technic2();
-        t2.Show();
     }
 
     private void SetData(string type) //Метод листа
@@ -72,6 +65,17 @@ public partial class Technic2 : Window
     private void TechBasket(object? sender, RoutedEventArgs e)
     {
         Helper.DataObj.Basket.Add(Helper.DataObj.Products[(int)(sender as Button)!.Tag!]);
+    }
+    
+    private void TechEditForm(object? sender, RoutedEventArgs e) //Метод кнопки "Редактировать"
+    {
+        int i = (int)(sender as Button)!.Tag!;
+        Helper.Edit[0] = i;
+        User2 u2 = new User2();
+        u2.Show();
+        Close();
+        Window2 w2 = new Window2();
+        w2.Show();
     }
     
     private void ToBasketForm(object? sender, RoutedEventArgs e) //Метод кнопки "Корзина"

@@ -23,16 +23,8 @@ public partial class Cloth2 : Window
         Back.Click += BackkOpen; //Метод к кнопке "Назад"
         Add.Click += AddForm; //Метод к кнопке "Добавить"
         Basket.Click += ToBasketForm; //Метод к кнопке "Корзина"
-        UpdateC.Click += UpdateCOnClick;
     }
-
-    private void UpdateCOnClick(object? sender, RoutedEventArgs e)
-    {
-        Close();
-        Cloth2 c2 = new Cloth2();
-        c2.Show();
-    }
-
+    
     private void SetData(string type) //Метод листа
     {
         Clothes.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).OrderBy(x => x.Idd).Select(x => new
@@ -75,6 +67,17 @@ public partial class Cloth2 : Window
     private void ClothBasket(object? sender, RoutedEventArgs e)
     {
         Helper.DataObj.Basket.Add(Helper.DataObj.Products[(int)(sender as Button)!.Tag!]);
+    }
+    
+    private void ClothEditForm(object? sender, RoutedEventArgs e) //Метод кнопки "Редактировать"
+    {
+        int i = (int)(sender as Button)!.Tag!;
+        Helper.Edit[0] = i;
+        User2 u2 = new User2();
+        u2.Show();
+        Close();
+        Window2 w2 = new Window2();
+        w2.Show();
     }
 
     private void ToBasketForm(object? sender, RoutedEventArgs e) //Метод кнопки "Корзина"

@@ -23,14 +23,6 @@ public partial class Food2 : Window
         Backkk.Click += BacckOpen; //Метод к кнопке "Назад"
         Add.Click += AddForm; //Метод к кнопке "Добавить"
         Basket.Click += ToBasketForm; //Метод к кнопке "Корзина"
-        UpdateF.Click += UpdateFOnClick;
-    }
-
-    private void UpdateFOnClick(object? sender, RoutedEventArgs e)
-    {
-        Close();
-        Food2 f2 = new Food2();
-        f2.Show();
     }
 
     private void SetData(string type) //Метод листа
@@ -48,9 +40,9 @@ public partial class Food2 : Window
     }
     private void AddForm(object? sender, RoutedEventArgs e) //Метод кнопки "Добавить"
     {
-        /*User2 u2 = new User2();
+        User2 u2 = new User2();
         u2.Show();
-        Close();*/
+        Close();
         Window1 w1 = new Window1();
         w1.Show();
         SetData("foods");
@@ -78,6 +70,9 @@ public partial class Food2 : Window
     {
         int i = (int)(sender as Button)!.Tag!;
         Helper.Edit[0] = i;
+        User2 u2 = new User2();
+        u2.Show();
+        Close();
         Window2 w2 = new Window2();
         w2.Show();
     }
