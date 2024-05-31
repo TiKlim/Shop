@@ -58,26 +58,13 @@
                 <Button Classes="transparent3" 
                         Height="40" 
                         Width="120" 
-                        Margin="1155,-30,0,0" 
+                        Margin="1085,-30,0,0" 
                         Name="Back">
                         <TextBlock VerticalAlignment="Center" 
                                    HorizontalAlignment="Center" 
                                    Foreground="IndianRed" 
                                    FontSize="20">
                                 Назад
-                        </TextBlock>
-                </Button>
-                <!--Кнопка "Обновить"-->
-                <Button Classes="transparent3" 
-                        Height="40" 
-                        Width="120" 
-                        Margin="1035,-42,0,0" 
-                        Name="Update">
-                        <TextBlock VerticalAlignment="Center" 
-                                   HorizontalAlignment="Center" 
-                                   Foreground="IndianRed" 
-                                   FontSize="20">
-                                Обновить
                         </TextBlock>
                 </Button>
                 </StackPanel>

@@ -22,16 +22,7 @@ public partial class Basket : Window
         Sum.Text = $"{Helper.DataObj.Basket.Sum(x => x.Price)}";
         Back.Click += MainForm;
         Pay.Click += PayForm;
-        Update.Click += UpdateOnClick;
     }
-
-    private void UpdateOnClick(object? sender, RoutedEventArgs e)
-    {
-        Close();
-        Basket b1 = new Basket();
-        b1.Show();
-    }
-
     private void SetData()
     {
         Baskett.ItemsSource = Helper.DataObj.Basket.OrderBy(x => x.Idd).Select(x => new
@@ -54,6 +45,9 @@ public partial class Basket : Window
             }
             Baskett.ItemsSource = Helper.DataObj.Basket.ToList();
         }
+        Close();
+        Basket b1 = new Basket();
+        b1.Show();
     }
     private void PayForm(object? sender, RoutedEventArgs e)
     {

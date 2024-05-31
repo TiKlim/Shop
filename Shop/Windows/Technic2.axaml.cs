@@ -22,6 +22,14 @@ public partial class Technic2 : Window
         Obratno.Click += ObratnoForm; //Метод к кнопке "Назад"
         Add.Click += AddForm; //Метод к кнопке "Добавить"
         Basket.Click += ToBasketForm; //Метод к кнопке "Корзина"
+        UpdateT.Click += UpdateTOnClick;
+    }
+
+    private void UpdateTOnClick(object? sender, RoutedEventArgs e)
+    {
+        Close();
+        Technic2 t2 = new Technic2();
+        t2.Show();
     }
 
     private void SetData(string type) //Метод листа

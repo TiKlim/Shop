@@ -23,7 +23,16 @@ public partial class Food2 : Window
         Backkk.Click += BacckOpen; //Метод к кнопке "Назад"
         Add.Click += AddForm; //Метод к кнопке "Добавить"
         Basket.Click += ToBasketForm; //Метод к кнопке "Корзина"
+        UpdateF.Click += UpdateFOnClick;
     }
+
+    private void UpdateFOnClick(object? sender, RoutedEventArgs e)
+    {
+        Close();
+        Food2 f2 = new Food2();
+        f2.Show();
+    }
+
     private void SetData(string type) //Метод листа
     {
         Foods.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).Select(x => new

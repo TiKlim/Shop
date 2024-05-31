@@ -1,4 +1,5 @@
-﻿using Avalonia.Controls;
+﻿using System;
+using Avalonia.Controls;
 using Avalonia.Interactivity;
 using System.Linq;
 using Shop.Windows;
@@ -22,7 +23,16 @@ public partial class Cloth2 : Window
         Back.Click += BackkOpen; //Метод к кнопке "Назад"
         Add.Click += AddForm; //Метод к кнопке "Добавить"
         Basket.Click += ToBasketForm; //Метод к кнопке "Корзина"
+        UpdateC.Click += UpdateCOnClick;
     }
+
+    private void UpdateCOnClick(object? sender, RoutedEventArgs e)
+    {
+        Close();
+        Cloth2 c2 = new Cloth2();
+        c2.Show();
+    }
+
     private void SetData(string type) //Метод листа
     {
         Clothes.ItemsSource = Helper.DataObj.Products.Where(x => x.Type == type).OrderBy(x => x.Idd).Select(x => new
