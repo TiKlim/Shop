@@ -18,7 +18,10 @@ public partial class Basket : Window
             Baskett.ItemsSource = Helper.DataObj.Basket.ToList();
         }
         SetData();
+        Collvo.Text = $"{Helper.DataObj.Basket.Count()}";
+        Sum.Text = $"{Helper.DataObj.Basket.Sum(x => x.Price)}";
         Back.Click += MainForm;
+        Pay.Click += PayForm;
     }
     private void SetData()
     {
@@ -42,5 +45,13 @@ public partial class Basket : Window
             }
             Baskett.ItemsSource = Helper.DataObj.Basket.ToList();
         }
+    }
+    private void PayForm(object? sender, RoutedEventArgs e)
+    {
+        Close();
+        //Basket b1 = new Basket();
+        //b1.Show();
+        Window3 w3 = new Window3();
+        w3.Show();
     }
 }

@@ -12,30 +12,64 @@
         WindowStartupLocation="CenterScreen"
         x:CompileBindings="False">
         <!---->
-        <ScrollViewer>
         <StackPanel>
+                <StackPanel Margin="0,0,0,0">
+                        <Border Background="IndianRed"
+                                Height="60"
+                                Width="740"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                CornerRadius="15"
+                                Margin="0,23,0,0">
+                        <StackPanel>
+                        <TextBlock Foreground="White"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontSize="20">
+                                Количество в корзине:
+                        </TextBlock>
+                        <TextBlock Foreground="White"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontSize="25"
+                                   x:Name="Collvo">
+                        </TextBlock>
+                        </StackPanel>
+                        </Border>
+                        <Border Background="White"
+                                Height="7"
+                                Width="1290"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Top"
+                                Margin="0,0,0,0">
+                                
+                        </Border>
+                </StackPanel>
+                <StackPanel Margin="0,-60,0,0">
                 <!--Корзина-->
                 <TextBlock Foreground="IndianRed" 
                            FontWeight="Medium" 
-                           Margin="30,20,0,0" 
+                           Margin="30,0,0,0" 
                            FontSize="30">
                         Корзина
                 </TextBlock>
                 <!--Кнопка "Назад"-->
-                <Button Classes="menu" 
+                <Button Classes="transparent3" 
                         Height="40" 
-                        Width="130" 
-                        Background="IndianRed" 
-                        Margin="1110,-40,0,0" 
+                        Width="120" 
+                        Margin="1110,-35,0,0" 
                         Name="Back">
                         <TextBlock VerticalAlignment="Center" 
                                    HorizontalAlignment="Center" 
-                                   Foreground="White" 
+                                   Foreground="IndianRed" 
                                    FontSize="20">
                                 Назад
                         </TextBlock>
                 </Button>
+                </StackPanel>
                 <!--Товары-->
+                <Border Height="540">
+                <ScrollViewer>
                 <ListBox
                         Margin="10"
                         Background="Transparent"
@@ -109,6 +143,54 @@
                                 </DataTemplate>
                         </ListBox.ItemTemplate>
                 </ListBox>
+                </ScrollViewer>
+                </Border>
+             <StackPanel Margin="0,0,0,0">
+                     <Border Background="White"
+                                     Height="7"
+                                     Width="1310"
+                                     HorizontalAlignment="Center"
+                                     VerticalAlignment="Bottom"
+                                     CornerRadius="15"
+                                     Margin="0,0,0,0">
+                     </Border>
+                             <Border Background="IndianRed"
+                                     Height="120"
+                                     Width="1190"
+                                     HorizontalAlignment="Center"
+                                     VerticalAlignment="Bottom"
+                                     CornerRadius="15"
+                                     Margin="0,0,0,0">
+                                <StackPanel>
+                                        <TextBlock Foreground="White"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   FontSize="20">
+                                                Общая сумма составляет:
+                                        </TextBlock>
+                                        <TextBlock Foreground="White"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   FontSize="25"
+                                                   x:Name="Sum">
+                                        </TextBlock>
+                                        <Button Margin="0,45,0,0"
+                                                HorizontalAlignment="Center"
+                                                Height="45"
+                                                Width="1190"
+                                                Classes="pink"
+                                                CornerRadius="10"
+                                                Name="Pay">
+                                                <TextBlock Margin="0,0,0,0"
+                                                           HorizontalAlignment="Center"
+                                                           VerticalAlignment="Center"
+                                                           Foreground="White"
+                                                           FontSize="22"
+                                                           FontWeight="Bold"
+                                                           Text="Оплатить"/>
+                                        </Button>
+                                </StackPanel>
+                        </Border>
+                </StackPanel>   
         </StackPanel>
-        </ScrollViewer>
 </Window>
