@@ -3,6 +3,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        ExtendClientAreaToDecorationsHint="True"
         x:Class="Shop.Windows.Basket"
         Title="Basket"
         MaxHeight="800"
@@ -57,13 +58,26 @@
                 <Button Classes="transparent3" 
                         Height="40" 
                         Width="120" 
-                        Margin="1110,-35,0,0" 
+                        Margin="1155,-30,0,0" 
                         Name="Back">
                         <TextBlock VerticalAlignment="Center" 
                                    HorizontalAlignment="Center" 
                                    Foreground="IndianRed" 
                                    FontSize="20">
                                 Назад
+                        </TextBlock>
+                </Button>
+                <!--Кнопка "Обновить"-->
+                <Button Classes="transparent3" 
+                        Height="40" 
+                        Width="120" 
+                        Margin="1035,-42,0,0" 
+                        Name="Update">
+                        <TextBlock VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" 
+                                   Foreground="IndianRed" 
+                                   FontSize="20">
+                                Обновить
                         </TextBlock>
                 </Button>
                 </StackPanel>
